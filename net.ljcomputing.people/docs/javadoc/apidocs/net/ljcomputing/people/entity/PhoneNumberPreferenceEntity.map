@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./AbstractPersonalContactPreference.html" title="net.ljcomputing.people.entity.AbstractPersonalContactPreference" alt="" coords="15,17,329,42"/>
+<area shape="rect" id="node1" href="./AbstractPersonalContactPreference.html" title="&lt;TABLE&gt;" alt="" coords="5,5,339,53"/>
+<area shape="rect" id="node3_1" href="./PhoneNumberPreferenceEntity.html" title="net.ljcomputing.people.entity.PhoneNumberPreferenceEntity" alt="" coords="209,113,399,138"/>
+<area shape="rect" id="node3" href="./PhoneNumberPreferenceEntity.html" title="&lt;TABLE&gt;" alt="" coords="199,101,409,149"/>
+<area shape="rect" id="node2_2" href="./PersonalContactsEntity.html" title="net.ljcomputing.people.entity.PersonalContactsEntity" alt="" coords="374,17,519,42"/>
+<area shape="rect" id="node2" href="./PersonalContactsEntity.html" title="&lt;TABLE&gt;" alt="" coords="363,5,530,53"/>
+<area shape="rect" id="node4_3" href="../domain/PhoneType.html" title="net.ljcomputing.people.domain.PhoneType" alt="" coords="231,203,377,258"/>
+<area shape="rect" id="node4" href="../domain/PhoneType.html" title="&lt;TABLE&gt;" alt="" coords="221,198,387,263"/>
+</map>

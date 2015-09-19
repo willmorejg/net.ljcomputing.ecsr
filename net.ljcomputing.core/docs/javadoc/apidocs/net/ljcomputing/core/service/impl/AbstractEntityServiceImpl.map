@@ -1,0 +1,15 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="../../entity/Entity.html" title="net.ljcomputing.core.entity.Entity" alt="" coords="858,222,987,277"/>
+<area shape="rect" id="node1" href="../../entity/Entity.html" title="&lt;TABLE&gt;" alt="" coords="847,217,998,282"/>
+<area shape="rect" id="node2_1" href="../../domain/AbstractDomain.html" title="net.ljcomputing.core.domain.AbstractDomain" alt="" coords="208,230,344,269"/>
+<area shape="rect" id="node2" href="../../domain/AbstractDomain.html" title="&lt;TABLE&gt;" alt="" coords="197,225,355,274"/>
+<area shape="rect" id="node3_2" href="./AbstractEntityServiceImpl.html" title="net.ljcomputing.core.service.impl.AbstractEntityServiceImpl" alt="" coords="422,131,1010,157"/>
+<area shape="rect" id="node3" href="./AbstractEntityServiceImpl.html" title="&lt;TABLE&gt;" alt="" coords="411,120,1021,168"/>
+<area shape="rect" id="node5" href="null" title="&lt;TABLE&gt;" alt="" coords="5,217,173,282"/>
+<area shape="rect" id="node6" href="null" title="&lt;TABLE&gt;" alt="" coords="379,225,584,274"/>
+<area shape="rect" id="node7" href="null" title="&lt;TABLE&gt;" alt="" coords="1023,217,1201,282"/>
+<area shape="rect" id="node8" href="null" title="&lt;TABLE&gt;" alt="" coords="1225,225,1404,274"/>
+<area shape="rect" id="node9" href="null" title="&lt;TABLE&gt;" alt="" coords="609,217,823,282"/>
+<area shape="rect" id="node4_3" href="../EntityService.html" title="net.ljcomputing.core.service.EntityService" alt="" coords="830,11,970,66"/>
+<area shape="rect" id="node4" href="../EntityService.html" title="&lt;TABLE&gt;" alt="" coords="819,6,981,71"/>
+</map>

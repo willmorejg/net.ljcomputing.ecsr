@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="../repository/MailingAddressRepository.html" title="net.ljcomputing.people.repository.MailingAddressRepository" alt="" coords="16,11,179,66"/>
+<area shape="rect" id="node1" href="../repository/MailingAddressRepository.html" title="&lt;TABLE&gt;" alt="" coords="5,6,189,71"/>
+<area shape="rect" id="node3_1" href="./MailingAddressEntity.html" title="net.ljcomputing.people.entity.MailingAddressEntity" alt="" coords="203,131,336,157"/>
+<area shape="rect" id="node3" href="./MailingAddressEntity.html" title="&lt;TABLE&gt;" alt="" coords="192,120,347,168"/>
+<area shape="rect" id="node2_2" href="./ContactEntity.html" title="net.ljcomputing.people.entity.ContactEntity" alt="" coords="224,18,315,59"/>
+<area shape="rect" id="node2" href="./ContactEntity.html" title="&lt;TABLE&gt;" alt="" coords="213,13,325,65"/>
+<area shape="rect" id="node4_3" href="../domain/MailingAddress.html" title="net.ljcomputing.people.domain.MailingAddress" alt="" coords="359,19,505,58"/>
+<area shape="rect" id="node4" href="../domain/MailingAddress.html" title="&lt;TABLE&gt;" alt="" coords="349,14,515,63"/>
+</map>

@@ -1,0 +1,17 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="../repository/PersonRepository.html" title="net.ljcomputing.people.repository.PersonRepository" alt="" coords="256,126,412,181"/>
+<area shape="rect" id="node1" href="../repository/PersonRepository.html" title="&lt;TABLE&gt;" alt="" coords="245,121,423,186"/>
+<area shape="rect" id="node4_1" href="./PersonEntity.html" title="net.ljcomputing.people.entity.PersonEntity" alt="" coords="417,246,505,271"/>
+<area shape="rect" id="node4" href="./PersonEntity.html" title="&lt;TABLE&gt;" alt="" coords="406,235,515,283"/>
+<area shape="rect" id="node2_2" href="./AbstractPersonalContactPreference.html" title="net.ljcomputing.people.entity.AbstractPersonalContactPreference" alt="" coords="411,26,724,51"/>
+<area shape="rect" id="node2" href="./AbstractPersonalContactPreference.html" title="&lt;TABLE&gt;" alt="" coords="400,15,735,63"/>
+<area shape="rect" id="node8" href="null" title="&lt;TABLE&gt;" alt="" coords="549,121,700,186"/>
+<area shape="rect" id="node3_3" href="./PersonalContactsEntity.html" title="net.ljcomputing.people.entity.PersonalContactsEntity" alt="" coords="51,342,196,367"/>
+<area shape="rect" id="node3" href="./PersonalContactsEntity.html" title="&lt;TABLE&gt;" alt="" coords="40,331,207,379"/>
+<area shape="rect" id="node5_4" href="../domain/Person.html" title="net.ljcomputing.people.domain.Person" alt="" coords="735,134,880,173"/>
+<area shape="rect" id="node5" href="../domain/Person.html" title="&lt;TABLE&gt;" alt="" coords="724,129,891,178"/>
+<area shape="rect" id="node6_5" href="../service/PersonalContactsService.html" title="net.ljcomputing.people.service.PersonalContactsService" alt="" coords="45,11,202,66"/>
+<area shape="rect" id="node6" href="../service/PersonalContactsService.html" title="&lt;TABLE&gt;" alt="" coords="34,6,213,71"/>
+<area shape="rect" id="node7_6" href="../service/impl/PersonalContactServiceImpl.html" title="net.ljcomputing.people.service.impl.PersonalContactServiceImpl" alt="" coords="37,134,210,173"/>
+<area shape="rect" id="node7" href="../service/impl/PersonalContactServiceImpl.html" title="&lt;TABLE&gt;" alt="" coords="26,129,221,178"/>
+</map>

@@ -1,0 +1,140 @@
+<div>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true" ng-click="$dismiss('cancel')">×</button>
+                    <h3 id="viewContactsModalLabel">Contact Information for {{personalContacts.person.fullName}}</h3>
+                </div>
+                <div class="modal-body">
+	                <div class="container">
+	                    <tabset>
+	                        <tab heading="Emails">
+			                  <button
+			                    class="fa fa-plus-square btn btn-primary" 
+			                    tooltip="Add a new person" 
+			                    tooltip-trigger="mouseenter" 
+			                    tooltip-append-to-body
+			                    ng-click="addEmailModal(personalContacts)">
+			                  &nbsp;&nbsp;&nbsp;Add Email
+			                </button>
+
+	                           <div>
+		                            <ul ng-repeat="associatedEmails in personalContacts.emailAddressPreferences" class="table table-bordered well" style="width: 600px;">
+		                                <li>
+                                            <a 
+                                                href="#" 
+                                                editable-select="associatedEmails.contactOrder"
+                                                e-ng-options="o.value as o.text for o in contactOrder"
+                                                onbeforesave="saveEmail($data, 'contactOrder')"
+                                                onshow="selectEmail(associatedEmails)" 
+                                                e-required>
+                                            {{showContactOrder(associatedEmails)}}
+                                            </a>
+                                            &nbsp;
+                                            <a 
+                                                href="#" 
+                                                editable-select="associatedEmails.contactType"
+                                                e-ng-options="o.value as o.text for o in contactType"
+                                                onbeforesave="saveEmail($data, 'contactType')"
+                                                onshow="selectEmail(associatedEmails)" 
+                                                e-required>
+                                            {{showContactType(associatedEmails)}}
+                                            </a>
+                                            &nbsp;
+                                            <a 
+                                                href="#" 
+                                                editable-email="associatedEmails.emailAddress.localPart"
+                                                onbeforesave="saveEmail($data,'emailAddress')"
+                                                onshow="selectEmail(associatedEmails)" 
+                                                e-required
+                                                e-placeholder="Enter email emailAddress">
+                                            {{associatedEmails.emailAddress.localPart}}
+                                            </a>
+                                            @
+                                            <a 
+                                                href="#" 
+                                                editable-email="associatedEmails.emailAddress.domain"
+                                                onbeforesave="saveEmail($data,'emailAddress')"
+                                                onshow="selectEmail(associatedEmails)" 
+                                                e-required
+                                                e-placeholder="Enter email emailAddress">
+                                            {{associatedEmails.emailAddress.domain}}
+                                            </a>
+	                                   </li>
+		                            </ul>
+	                            </div>
+	                        </tab>
+	                        <tab heading="Phones">
+	                           <div>
+		                            <ul ng-repeat="associatedPhones in person.associatedPhones">
+		                                <li>
+                                            <a 
+                                                href="#" 
+                                                editable-select="associatedPhones.contactOrder"
+                                                e-ng-options="o.value as o.text for o in contactOrder"
+                                                onbeforesave="savePhone($data, 'contactOrder')"
+                                                onshow="selectPhone(associatedPhones)" 
+                                                e-required>
+                                            {{showContactOrder(associatedPhones)}}
+                                            </a>
+                                            &nbsp;
+                                            <a 
+                                                href="#" 
+                                                editable-select="associatedPhones.contactType"
+                                                e-ng-options="o.value as o.text for o in contactType"
+                                                onbeforesave="savePhone($data, 'contactType')"
+                                                onshow="selectPhone(associatedPhones)" 
+                                                e-required>
+                                            {{showContactType(associatedPhones)}}
+                                            </a>
+                                            &nbsp;
+                                            <a 
+                                                href="#" 
+                                                editable-tel="associatedPhones.contact.phoneNumber"
+                                                e-pattern="^[\(]?\d{3}[\)]?\s+\d{3}-\d{4}$|^[\(]?\d{3}[\)]?\s+\d{3}-\d{4}\s+ext[ension]?\s+\d+$"
+                                                onbeforesave="savePhone($data,'phoneNumber')"
+                                                onshow="selectPhone(associatedPhones)" 
+                                                e-required
+                                                e-placeholder="Enter phone number">
+                                            {{associatedPhones.contact.phoneNumber}}
+                                            </a>
+                                        </li>
+		                            </ul>
+	                            </div>
+	                        </tab>
+	                        <tab heading="Addresses">
+	                           <div>
+		                            <ul ng-repeat="associatedAddresses in person.associatedAddresses">
+		                              <li>
+                                            <a 
+                                                href="#" 
+                                                editable-select="associatedAddresses.contactOrder"
+                                                e-ng-options="o.value as o.text for o in contactOrder"
+                                                onbeforesave="saveEmail($data, 'contactOrder')"
+                                                onshow="selectPhone(associatedAddresses)" 
+                                                e-required>
+                                            {{showContactOrder(associatedAddresses)}}
+                                            </a>
+                                            &nbsp;
+                                            <a 
+                                                href="#" 
+                                                editable-select="associatedAddresses.contactType"
+                                                e-ng-options="o.value as o.text for o in contactType"
+                                                onbeforesave="saveEmail($data, 'contactType')"
+                                                onshow="selectPhone(associatedAddresses)" 
+                                                e-required>
+                                            {{showContactType(associatedAddresses)}}
+                                            </a>
+                                            &nbsp;
+		                                    {{associatedAddresses.contact.fullAddress}}
+	                                  </li>
+		                            </ul>
+	                            </div>
+	                        </tab>
+	                    </tabset>
+	                </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn" ng-click="$dismiss('cancel')">Close</button>
+                </div>
+            </div>
+</div>

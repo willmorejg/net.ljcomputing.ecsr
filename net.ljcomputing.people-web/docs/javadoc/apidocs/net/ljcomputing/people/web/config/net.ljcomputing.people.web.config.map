@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./PeopleWebConfiguration.html" title="net.ljcomputing.people.web.config.PeopleWebConfiguration" alt="" coords="16,17,173,42"/>
+<area shape="rect" id="node1" href="./PeopleWebConfiguration.html" title="&lt;TABLE&gt;" alt="" coords="5,5,184,53"/>
+<area shape="rect" id="node2_1" href="./PeopleMvcConfiguration.html" title="net.ljcomputing.people.web.config.PeopleMvcConfiguration" alt="" coords="219,17,373,42"/>
+<area shape="rect" id="node2" href="./PeopleMvcConfiguration.html" title="&lt;TABLE&gt;" alt="" coords="209,5,383,53"/>
+<area shape="rect" id="node3_2" href="./XmlWebMvcConfigurerAdapter.html" title="net.ljcomputing.people.web.config.XmlWebMvcConfigurerAdapter" alt="" coords="418,17,606,42"/>
+<area shape="rect" id="node3" href="./XmlWebMvcConfigurerAdapter.html" title="&lt;TABLE&gt;" alt="" coords="407,5,617,53"/>
+</map>

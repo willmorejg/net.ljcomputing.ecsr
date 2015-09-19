@@ -1,0 +1,8 @@
+net.ljcomputing.people
+net.ljcomputing.people.config
+net.ljcomputing.people.domain
+net.ljcomputing.people.entity
+net.ljcomputing.people.repository
+net.ljcomputing.people.repository.impl
+net.ljcomputing.people.service
+net.ljcomputing.people.service.impl

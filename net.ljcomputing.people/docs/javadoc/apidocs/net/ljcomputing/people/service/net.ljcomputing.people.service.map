@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./PostalAddressService.html" title="net.ljcomputing.people.service.PostalAddressService" alt="" coords="15,11,153,53"/>
+<area shape="rect" id="node1" href="./PostalAddressService.html" title="&lt;TABLE&gt;" alt="" coords="4,6,164,58"/>
+<area shape="rect" id="node2_1" href="./PersonalContactsService.html" title="net.ljcomputing.people.service.PersonalContactsService" alt="" coords="199,11,356,53"/>
+<area shape="rect" id="node2" href="./PersonalContactsService.html" title="&lt;TABLE&gt;" alt="" coords="188,6,367,58"/>
+<area shape="rect" id="node3_2" href="./EmailAddressService.html" title="net.ljcomputing.people.service.EmailAddressService" alt="" coords="401,11,537,53"/>
+<area shape="rect" id="node3" href="./EmailAddressService.html" title="&lt;TABLE&gt;" alt="" coords="391,6,548,58"/>
+<area shape="rect" id="node4_3" href="./PersonService.html" title="net.ljcomputing.people.service.PersonService" alt="" coords="583,11,681,53"/>
+<area shape="rect" id="node4" href="./PersonService.html" title="&lt;TABLE&gt;" alt="" coords="572,6,692,58"/>
+<area shape="rect" id="node5_4" href="./PhoneNumberService.html" title="net.ljcomputing.people.service.PhoneNumberService" alt="" coords="727,11,867,53"/>
+<area shape="rect" id="node5" href="./PhoneNumberService.html" title="&lt;TABLE&gt;" alt="" coords="717,6,878,58"/>
+</map>

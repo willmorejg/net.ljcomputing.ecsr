@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./PersonService.html" title="net.ljcomputing.people.service.PersonService" alt="" coords="155,126,253,167"/>
+<area shape="rect" id="node1" href="./PersonService.html" title="&lt;TABLE&gt;" alt="" coords="144,121,264,173"/>
+<area shape="rect" id="node3_1" href="./impl/PersonServiceImpl.html" title="net.ljcomputing.people.service.impl.PersonServiceImpl" alt="" coords="121,227,287,266"/>
+<area shape="rect" id="node3" href="./impl/PersonServiceImpl.html" title="&lt;TABLE&gt;" alt="" coords="111,222,297,271"/>
+<area shape="rect" id="node2_2" href="./impl/PersonalContactServiceImpl.html" title="net.ljcomputing.people.service.impl.PersonalContactServiceImpl" alt="" coords="16,19,189,58"/>
+<area shape="rect" id="node2" href="./impl/PersonalContactServiceImpl.html" title="&lt;TABLE&gt;" alt="" coords="5,14,200,63"/>
+<area shape="rect" id="node4" href="null" title="&lt;TABLE&gt;" alt="" coords="225,6,386,71"/>
+</map>

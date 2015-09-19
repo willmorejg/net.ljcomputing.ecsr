@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>net.ljcomputing</groupId>
+		<version>1.0.0-SNAPSHOT</version>
+		<artifactId>ecsr</artifactId>
+	</parent>
+
+	<artifactId>people-web</artifactId>
+	<packaging>war</packaging>
+
+	<name>LJ Computing - Contacts - Web</name>
+	<description>Project web implementation of models related to contact information.</description>
+
+	<!-- Contact and License Information -->
+	<organization>
+		<name>LJ Computing</name>
+		<url>http://ljcomputing.net/</url>
+	</organization>
+	<licenses>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0</url>
+		</license>
+	</licenses>
+	<developers>
+		<developer>
+			<name>James G. Willmore</name>
+		</developer>
+	</developers>
+
+	<properties>
+		<start-class>net.ljcomputing.people.web.config.PeopleWebConfiguration</start-class>
+
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<source.version>1.8</source.version>
+		<target.version>1.8</target.version>
+
+		<tomcat.version>8.0.26</tomcat.version>
+
+		<net-ljcomputing-neo4j.version>1.0.0-SNAPSHOT</net-ljcomputing-neo4j.version>
+		<net-ljcomputing-rhino.version>1.0.0-SNAPSHOT</net-ljcomputing-rhino.version>
+		<net-ljcomputing-logging.version>1.0.0-SNAPSHOT</net-ljcomputing-logging.version>
+		<net-ljcomputing-gson.version>1.0.1-SNAPSHOT</net-ljcomputing-gson.version>
+		<net-ljcomputing-people.version>1.0.0-SNAPSHOT</net-ljcomputing-people.version>
+		<net-ljcomputing-core.version>1.0.0-SNAPSHOT</net-ljcomputing-core.version>
+		<net-ljcomputing-rhino.version>1.0.0-SNAPSHOT</net-ljcomputing-rhino.version>
+		<com-thoughtworks-xstream.version>1.4.8</com-thoughtworks-xstream.version>
+	</properties>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-jasper</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>net.ljcomputing</groupId>
+			<artifactId>neo4j</artifactId>
+			<version>${net-ljcomputing-neo4j.version}</version>
+			<type>pom</type>
+		</dependency>
+
+		<dependency>
+			<groupId>net.ljcomputing</groupId>
+			<artifactId>rhino</artifactId>
+			<version>${net-ljcomputing-rhino.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>net.ljcomputing</groupId>
+			<artifactId>logging</artifactId>
+			<version>${net-ljcomputing-logging.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>net.ljcomputing</groupId>
+			<artifactId>gson</artifactId>
+			<version>${net-ljcomputing-gson.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>net.ljcomputing</groupId>
+			<artifactId>core</artifactId>
+			<version>${net-ljcomputing-core.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>net.ljcomputing</groupId>
+			<artifactId>people</artifactId>
+			<version>${net-ljcomputing-people.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-ws</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.thoughtworks.xstream</groupId>
+			<artifactId>xstream</artifactId>
+			<version>${com-thoughtworks-xstream.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.jayway.jsonpath</groupId>
+			<artifactId>json-path</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+
+		<pluginManagement>
+			<plugins>
+				<!--This plugin's configuration is used to store Eclipse m2e settings 
+					only. It has no influence on the Maven build itself. -->
+				<plugin>
+					<groupId>org.eclipse.m2e</groupId>
+					<artifactId>lifecycle-mapping</artifactId>
+					<version>1.0.0</version>
+					<configuration>
+						<lifecycleMappingMetadata>
+							<pluginExecutions>
+								<pluginExecution>
+									<pluginExecutionFilter>
+										<groupId>org.apache.maven.plugins</groupId>
+										<artifactId>maven-war-plugin</artifactId>
+										<versionRange>[2.5,)</versionRange>
+										<goals>
+											<goal>war</goal>
+										</goals>
+									</pluginExecutionFilter>
+									<action>
+										<ignore />
+									</action>
+								</pluginExecution>
+								<pluginExecution>
+									<pluginExecutionFilter>
+										<groupId>org.apache.maven.plugins</groupId>
+										<artifactId>maven-dependency-plugin</artifactId>
+										<versionRange>[2.9,)</versionRange>
+										<goals>
+											<goal>copy-dependencies</goal>
+										</goals>
+									</pluginExecutionFilter>
+									<action>
+										<ignore />
+									</action>
+								</pluginExecution>
+							</pluginExecutions>
+						</lifecycleMappingMetadata>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+
+		<plugins>
+
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<mainClass>${start-class}</mainClass>
+					<classifier>exec</classifier>
+					<addResources>true</addResources>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-scm-plugin</artifactId>
+
+				<configuration>
+					<goals>install</goals>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-changelog-plugin</artifactId>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-install-plugin</artifactId>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-clean-plugin</artifactId>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>${source.version}</source>
+					<target>${target.version}</target>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-shade-plugin</artifactId>
+				<executions>
+					<execution>
+						<phase>repackage</phase>
+						<goals>
+							<goal>shade</goal>
+						</goals>
+						<configuration>
+							<finalName>ecsr.jar</finalName>
+							<transformers>
+								<transformer
+									implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+									<mainClass>${start-class}</mainClass>
+								</transformer>
+							</transformers>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<configuration>
+					<warName>ecsr</warName>
+					<!--packagingExcludes>**/*mysql*.jar,**/*log4j*.jar,**/*slf4j*.jar</packagingExcludes -->
+					<packagingIncludes>**/*.jar,**/*.xml,**/*.properties,**/*.index,**/*.class,**/*.png,**/*.css,**/*.js,**/*.jsp,**/*.jpg,**/*.htm*</packagingIncludes>
+					<archive>
+						<manifest>
+							<addClasspath>true</addClasspath>
+							<classpathPrefix>lib/</classpathPrefix>
+							<mainClass>${start-class}</mainClass>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
+
+<!-- 			<plugin> -->
+<!-- 				<groupId>org.apache.maven.plugins</groupId> -->
+<!-- 				<artifactId>maven-javadoc-plugin</artifactId> -->
+<!-- 				<configuration> -->
+<!-- 					<reportOutputDirectory>${basedir}/docs</reportOutputDirectory> -->
+<!-- 					<destDir>javadoc</destDir> -->
+<!-- 					<detectLinks>true</detectLinks> -->
+<!-- 					<show>private</show> -->
+<!-- 					<tags> -->
+<!-- 						<tag> -->
+<!-- 							<name>todo.</name> -->
+<!-- 							placement>a</placement> -->
+<!-- 							<head>To Do:</head> -->
+<!-- 						</tag> -->
+<!-- 					</tags> -->
+<!-- 					<top>Copyright 2014-2015, &lt;a href="http://ljcomputing.net"&gt;LJ -->
+<!-- 						Computing&lt;/a&gt;</top> -->
+<!-- 					<bottom>&lt;p style='text-align: center;'&gt;Copyright 2014-2015, -->
+<!-- 						James G. -->
+<!-- 						Willmore, &lt;a href="http://ljcomputing.net"&gt;LJ -->
+<!-- 						Computing&lt;/a&gt;&lt;/p&gt; -->
+<!-- 						&lt;p/&gt; -->
+<!-- 						&lt;p style='text-align: -->
+<!-- 						center;'&gt;Licensed under the Apache License, -->
+<!-- 						Version 2.0 (the -->
+<!-- 						"License");&lt;/br&gt; -->
+<!-- 						you may not use this file except in -->
+<!-- 						compliance with the -->
+<!-- 						License. -->
+<!-- 						You may obtain a copy of the License -->
+<!-- 						at&lt;/p&gt; -->
+<!-- 						&lt;p/&gt; -->
+<!-- 						&lt;p style='text-align: center;'&gt;&lt;a -->
+<!-- 						href="http://www.apache.org/licenses/LICENSE-2.0"&gt;http://www.apache.org/licenses/LICENSE-2.0&lt;/a&gt;&lt;/p&gt; -->
+<!-- 						&lt;p/&gt; -->
+<!-- 						&lt;p style='text-align: center;'&gt;Unless required by -->
+<!-- 						applicable law -->
+<!-- 						or agreed to in writing, software -->
+<!-- 						distributed under -->
+<!-- 						the License is distributed on an "AS IS" BASIS, -->
+<!-- 						WITHOUT WARRANTIES -->
+<!-- 						OR CONDITIONS OF ANY KIND, either express or implied. -->
+<!-- 						See the -->
+<!-- 						License for the specific language governing permissions -->
+<!-- 						and -->
+<!-- 						limitations under the License.&lt;/p&gt; -->
+<!-- 						&lt;p/&gt;</bottom> -->
+<!-- 					<linksource>true</linksource> -->
+<!-- 				</configuration> -->
+<!-- 			</plugin> -->
+
+		</plugins>
+
+	</build>
+
+</project>

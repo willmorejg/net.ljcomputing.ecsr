@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>ECSR - People</title>
+
+<link href="css/bootstrap.spacelab.css" rel="stylesheet"/>
+<link href="js/vendor/font-awesome-4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+<link href="js/vendor/bootstrap-editable.css" rel="stylesheet">
+<link href="css/xeditable.css" rel="stylesheet">
+<link href="css/ngToast.css" rel="stylesheet">
+<link href="css/ngToast-animations.css" rel="stylesheet">
+<link rel="stylesheet" href="js/vendor/angular-1.4.4/adapt-strap.min.css"/>
+
+<!--[if lt IE 9]>
+	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<script data-main="js/main" src="js/vendor/require.js"></script>
+
+</head>
+
+<body>
+<div class="container">
+	<div>
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+				</button>
+				<a class="navbar-brand" href="#">Electronic Customer Service
+					Representative</a>
+			</div>
+			<nav class="navbar navbar-inverse navbar-fixed-top">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse"
+							data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+							<span class="sr-only">Toggle navigation</span>
+						</button>
+						<a class="navbar-brand" href="#">Electronic Customer Service
+							Representative</a>
+					</div>
+					<div id="navbar" class="navbar-collapse collapse">
+						<form class="navbar-form navbar-right" action="">
+							<input type="text" class="form-control" placeholder="Search...">
+						</form>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#">Dashboard</a></li>
+							<li><a href="#">Settings</a></li>
+							<li class="dropdown"><a href="#" class="dropdown-toggle"
+								data-toggle="dropdown" role="button" aria-expanded="false">Administration
+									<span class="caret"></span>
+							</a>
+								<ul class="dropdown-menu" role="menu"
+									aria-labelledby="administration">
+									<li><a href="#/people">People</a></li>
+								</ul></li>
+							<li><a href="#">Profile</a></li>
+							<li><a href="#">Help</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+	</div>
+</div>
+
+<div class="container">
+    <toast></toast>
+	<ng-view>
+		
+	</ng-view>
+</div>
+</body>
+</html>

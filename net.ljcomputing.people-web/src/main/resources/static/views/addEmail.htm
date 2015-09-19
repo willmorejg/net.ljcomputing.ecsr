@@ -1,0 +1,49 @@
+<!-- Add Modal -->
+<div>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h3 id="addEmailModalLabel">Add Email Preference for {{person.fullName}}</h3>
+                </div>
+                <div class="modal-body">
+                    <form class="form-inline" role="form">
+                        <div class="form-group">
+                            <div class="col-sm-1">
+                                <select id="contactOrder" class="form-control" ng-model="email.contactOrder">
+                                    <option>PRIMARY</option>
+                                    <option>SECONDARY</option>
+                                    <option>TERTIARY</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-1">
+                                <select id="contactType" class="form-control" ng-model="email.contactType">
+                                    <option>BUSINESS</option>
+                                    <option>PERSONAL</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-3">
+                                <input id="recipient" class="form-control" type="text" placeholder="Recipient" ng-model="email.contact.localPart" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-1">
+                                @
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-3">
+                                <input id="domain" class="form-control" type="text" placeholder="Domain" ng-model="email.contact.domain" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn"ng-click="cancel()">Cancel</button>
+                    <button class="btn btn-primary" ng-click="saveEmail()">Save Changes</button>
+                </div>
+            </div>
+</div>

@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./MailingAddressRepository.html" title="net.ljcomputing.people.repository.MailingAddressRepository" alt="" coords="16,11,179,53"/>
+<area shape="rect" id="node1" href="./MailingAddressRepository.html" title="&lt;TABLE&gt;" alt="" coords="5,6,189,58"/>
+<area shape="rect" id="node2_1" href="./EmailAddressRepository.html" title="net.ljcomputing.people.repository.EmailAddressRepository" alt="" coords="225,11,378,53"/>
+<area shape="rect" id="node2" href="./EmailAddressRepository.html" title="&lt;TABLE&gt;" alt="" coords="214,6,389,58"/>
+<area shape="rect" id="node3_2" href="./PhoneNumberRepository.html" title="net.ljcomputing.people.repository.PhoneNumberRepository" alt="" coords="424,11,581,53"/>
+<area shape="rect" id="node3" href="./PhoneNumberRepository.html" title="&lt;TABLE&gt;" alt="" coords="413,6,592,58"/>
+<area shape="rect" id="node4_3" href="./PersonRepository.html" title="net.ljcomputing.people.repository.PersonRepository" alt="" coords="627,11,744,53"/>
+<area shape="rect" id="node4" href="./PersonRepository.html" title="&lt;TABLE&gt;" alt="" coords="616,6,755,58"/>
+</map>

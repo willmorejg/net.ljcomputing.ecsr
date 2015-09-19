@@ -1,0 +1,24 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./PersonalContactsEntity.html" title="net.ljcomputing.people.entity.PersonalContactsEntity" alt="" coords="467,326,613,351"/>
+<area shape="rect" id="node1" href="./PersonalContactsEntity.html" title="&lt;TABLE&gt;" alt="" coords="457,315,623,363"/>
+<area shape="rect" id="node2_1" href="./PhoneNumberPreferenceEntity.html" title="net.ljcomputing.people.entity.PhoneNumberPreferenceEntity" alt="" coords="969,431,1159,457"/>
+<area shape="rect" id="node2" href="./PhoneNumberPreferenceEntity.html" title="&lt;TABLE&gt;" alt="" coords="959,420,1169,468"/>
+<area shape="rect" id="node3_2" href="./MailingAddressPreferenceEntity.html" title="net.ljcomputing.people.entity.MailingAddressPreferenceEntity" alt="" coords="15,431,209,457"/>
+<area shape="rect" id="node3" href="./MailingAddressPreferenceEntity.html" title="&lt;TABLE&gt;" alt="" coords="5,420,219,468"/>
+<area shape="rect" id="node4_3" href="./EmailAddressPreferenceEntity.html" title="net.ljcomputing.people.entity.EmailAddressPreferenceEntity" alt="" coords="306,431,491,457"/>
+<area shape="rect" id="node4" href="./EmailAddressPreferenceEntity.html" title="&lt;TABLE&gt;" alt="" coords="295,420,502,468"/>
+<area shape="rect" id="node6_4" href="../domain/MailingAddressType.html" title="net.ljcomputing.people.domain.MailingAddressType" alt="" coords="39,531,185,586"/>
+<area shape="rect" id="node6" href="../domain/MailingAddressType.html" title="&lt;TABLE&gt;" alt="" coords="29,526,195,591"/>
+<area shape="rect" id="node7_5" href="../domain/ContactType.html" title="net.ljcomputing.people.domain.ContactType" alt="" coords="589,417,734,471"/>
+<area shape="rect" id="node7" href="../domain/ContactType.html" title="&lt;TABLE&gt;" alt="" coords="578,411,745,477"/>
+<area shape="rect" id="node8_6" href="../domain/ContactOrder.html" title="net.ljcomputing.people.domain.ContactOrder" alt="" coords="779,417,925,471"/>
+<area shape="rect" id="node8" href="../domain/ContactOrder.html" title="&lt;TABLE&gt;" alt="" coords="769,411,935,477"/>
+<area shape="rect" id="node9_7" href="../domain/PhoneType.html" title="net.ljcomputing.people.domain.PhoneType" alt="" coords="991,531,1137,586"/>
+<area shape="rect" id="node9" href="../domain/PhoneType.html" title="&lt;TABLE&gt;" alt="" coords="981,526,1147,591"/>
+<area shape="rect" id="node5_8" href="./PersonEntity.html" title="net.ljcomputing.people.entity.PersonEntity" alt="" coords="496,230,584,255"/>
+<area shape="rect" id="node5" href="./PersonEntity.html" title="&lt;TABLE&gt;" alt="" coords="485,219,595,267"/>
+<area shape="rect" id="node10_9" href="../service/PersonalContactsService.html" title="net.ljcomputing.people.service.PersonalContactsService" alt="" coords="420,11,577,66"/>
+<area shape="rect" id="node10" href="../service/PersonalContactsService.html" title="&lt;TABLE&gt;" alt="" coords="409,6,588,71"/>
+<area shape="rect" id="node11_10" href="../service/impl/PersonalContactServiceImpl.html" title="net.ljcomputing.people.service.impl.PersonalContactServiceImpl" alt="" coords="547,126,720,165"/>
+<area shape="rect" id="node11" href="../service/impl/PersonalContactServiceImpl.html" title="&lt;TABLE&gt;" alt="" coords="536,121,731,170"/>
+</map>

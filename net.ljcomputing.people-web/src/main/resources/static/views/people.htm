@@ -1,0 +1,81 @@
+<link rel="stylesheet" type="text/css" href="../js/vendor/angular-1.4.4/ui-grid.css">
+<link rel="stylesheet" type="text/css" href="../css/ecsr.css"/>
+
+<div>
+	<div class="container-fluid" style="width: 95%;">
+		<div class="col-md-12 col-md-offset-1">
+
+			<h1 class="page-header well">Administration</h1>
+
+			<h2 class="well">People</h2>
+
+            <div ng-repeat="alert in alerts">
+                <alert type="{{alert.type}}" dismiss-on-timeout="{{alert.timeout}}" close="closeAlert($index)">{{alert.msg}}</alert>
+            </div>
+
+			<div class="table-responsive well">
+                <button
+                    class="fa fa-plus-square btn btn-primary" 
+                    tooltip="Add a new person" 
+                    tooltip-trigger="mouseenter" 
+                    tooltip-append-to-body
+                    ng-click="addPersonModal()">
+                  &nbsp;&nbsp;&nbsp;Add Person
+                </button>
+
+                <div class="table-responsive well" ng-show="isLoading"></div><div ng-show="isLoading"><span><i class="fa fa-spinner fa-spin"></i></span>Loading ...</div>
+				<div class="ng-cloak" ng-show="!isLoading" ng-cloak>
+				    <div class="table-responsive well">
+				        <table st-pipe="pipeFunction" st-table="people" st-safe-src="rawPeople" class="grid table table-bordered table-hover table-striped table-responsive">
+				            <thead>
+				                <tr>
+	                                <th st-sort="uuid">UUID</th>
+	                                <th st-sort="firstName">First<br/>Name</th>
+	                                <th>Middle<br/>Name</th>
+	                                <th st-sort="lastName">Last<br/>Name</th>
+	                                <th></th>
+                                </tr>
+								<tr>
+                                    <th>
+                                    </th>
+									<th colspan="3">
+									   <div class="form-group has-feedback has-clear">
+									   <input
+									       st-search="fullName"
+									       st-delay="1250"
+									       placeholder="Search by Full Name"
+									       class="input-sm form-control"
+									       type="search" />
+									       <a class="fa fa-remove form-control-feedback form-control-clear ng-cloak" ng-show="showClearFilter" ng-cloak st-reset-search style="pointer-events: auto; text-decoration: none;cursor: pointer;"></a>
+									   </div>
+									</th>
+                                    <th>
+                                    </th>
+								</tr>
+							</thead>
+				            <tbody>
+				                <tr ng-repeat="person in people">
+                                    <td><a ng-click="contactsModal(person)">{{person.uuid}}</a></td>
+                                    <td>{{person.firstName}}</td>
+                                    <td>{{person.middleName}}</td>
+                                    <td>{{person.lastName}}</td>
+<!--                                     <td><button type="button" class="btn btn-xs btn-danger" ng-click="deletePerson(person)"><i class="fa fa-remove">Delete Person</i></button></td> -->
+                                    <td><button type="button" class="btn btn-xs btn-danger" st-custom-refresh callback="deletePerson(person)"><i class="fa fa-remove">Delete Person</i></button></td>
+				                </tr>
+				            </tbody>
+						    <tfoot>
+							    <tr>
+							        <td id="tablePagination" class="text-center" st-pagination="" colspan="4">
+							        </td>
+							        <!--td colspan="5" class="text-center">
+							            <div st-items-by-page="10" st-pagination="" st-template="views/custom-smart-table-pagination.htm"></div>
+							        </td-->
+							    </tr>
+						    </tfoot>
+				        </table>
+				    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
