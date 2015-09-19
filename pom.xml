@@ -43,7 +43,7 @@
 	<scm>
 		<url>https://github.com/willmorejg/net.ljcomputing.ecsr</url>
 		<connection>scm:git:ssh://git@github.com/willmorejg/net.ljcomputing.ecsr.git</connection>
-		<developerConnection>scm:git:ssh://git@@github.com/willmorejg/net.ljcomputing.ecsr.git</developerConnection>
+		<developerConnection>scm:git:ssh://git@github.com/willmorejg/net.ljcomputing.ecsr.git</developerConnection>
 	</scm>
 
 	<properties>
