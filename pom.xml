@@ -25,6 +25,7 @@
 
 	<properties>
 		<github.username>willmorejg</github.username>
+		
 		<net-ljcomputing-rhino.version>1.0.0-SNAPSHOT</net-ljcomputing-rhino.version>
 		<net-ljcomputing-gson.version>1.0.1-SNAPSHOT</net-ljcomputing-gson.version>
 		<net-ljcomputing-logging.version>1.0.0-SNAPSHOT</net-ljcomputing-logging.version>
@@ -61,13 +62,13 @@
         <repository>
             <id>githubreleaserepo</id>
             <name>GitHub release repository</name>
-            <url>scm:git:ssh://git@github.com/${github.username}/repo/raw/master/releases</url>
+            <url>scm:git:ssh://git@github.com/${github.username}/repos/raw/master/releases</url>
         </repository>
 
         <snapshotRepository>
             <id>githubsnapshotrepo</id>
             <name>GitHub snapshot repository</name>
-            <url>scm:git:ssh://git@github.com/${github.username}/repo/raw/master/snapshots</url>
+            <url>scm:git:ssh://git@github.com/${github.username}/repos/raw/master/snapshots</url>
         </snapshotRepository>
 
     </distributionManagement>
