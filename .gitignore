@@ -53,7 +53,7 @@ Thumbs.db
 
 # Other ignored resources #
 ###########################
-*/target/*
+target/*
 */.tomcatplugin*
 */.settings*
 */.settings/*
