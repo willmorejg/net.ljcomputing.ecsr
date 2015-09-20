@@ -53,7 +53,7 @@
 	<scm>
 		<url>https://github.com/${github.username}/${project.groupId}.${project.artifactId}</url>
 		<connection>scm:git:ssh://git@github.com/${github.username}/${project.groupId}.${project.artifactId}.git</connection>
-		<developerConnection>scm:git:ssh://git@github.com/${github.username}/${project.groupId}.${project.artifactId}.git</developerConnection>
+		<developerConnection>scm:git:git://${project.baseUri}/${project.groupId}.${project.artifactId}.git</developerConnection>
 	</scm>
 
    <distributionManagement>
