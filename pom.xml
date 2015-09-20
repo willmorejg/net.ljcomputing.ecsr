@@ -59,7 +59,7 @@
    <distributionManagement>
 
         <repository>
-            <id>githubrepo</id>
+            <id>githubreleaserepo</id>
             <name>GitHub release repository</name>
             <url>scm:git:ssh://git@github.com/${github.username}/repo/raw/master/releases</url>
         </repository>
