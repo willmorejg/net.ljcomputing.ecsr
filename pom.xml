@@ -60,8 +60,8 @@
 
         <repository>
             <id>githubrepo</id>
-            <name>Local file system</name>
-            <url>${project.baseUri}</url>
+            <name>GitHub repository</name>
+            <url>${scm.connection}</url>
         </repository>
 
         <snapshotRepository>
@@ -161,6 +161,7 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-scm-plugin</artifactId>
 				<configuration>
+					<tag>${project.artifactId}-${project.version}</tag>
 					<connectionType>developerConnection</connectionType>
 					<basedir>./</basedir>
 				</configuration>
