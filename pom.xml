@@ -52,22 +52,22 @@
 
 	<scm>
 		<url>https://github.com/${github.username}/${project.groupId}.${project.artifactId}</url>
-		<connection>scm:git:ssh://git@github.com/${github.username}/repo/releases/${project.groupId}.${project.artifactId}.git</connection>
-		<developerConnection>scm:git:ssh://git@github.com/${github.username}/repo/snapshots/${project.groupId}.${project.artifactId}.git</developerConnection>
+		<connection>scm:git:ssh://git@github.com/${github.username}/${project.groupId}.${project.artifactId}.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com/${github.username}/${project.groupId}.${project.artifactId}.git</developerConnection>
 	</scm>
 
    <distributionManagement>
 
         <repository>
             <id>githubrepo</id>
-            <name>GitHub repository</name>
-            <url>${project.scm.connection}</url>
+            <name>GitHub release repository</name>
+            <url>scm:git:ssh://git@github.com/${github.username}/repo/raw/master/releases</url>
         </repository>
 
         <snapshotRepository>
             <id>githubsnapshotrepo</id>
             <name>GitHub snapshot repository</name>
-            <url>${project.scm.developerConnection}</url>
+            <url>scm:git:ssh://git@github.com/${github.username}/repo/raw/master/snapshots</url>
         </snapshotRepository>
 
     </distributionManagement>
