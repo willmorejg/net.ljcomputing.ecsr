@@ -52,8 +52,8 @@
 
 	<scm>
 		<url>https://github.com/${github.username}/${project.groupId}.${project.artifactId}</url>
-		<connection>scm:git:ssh://git@github.com/${github.username}/${project.groupId}.${project.artifactId}.git</connection>
-		<developerConnection>scm:git:ssh://git@github.com/${github.username}/${project.groupId}.${project.artifactId}.git</developerConnection>
+		<connection>scm:git:ssh://git@github.com/${github.username}/repo/releases/${project.groupId}.${project.artifactId}.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com/${github.username}/repo/snapshots/${project.groupId}.${project.artifactId}.git</developerConnection>
 	</scm>
 
    <distributionManagement>
@@ -61,13 +61,13 @@
         <repository>
             <id>githubrepo</id>
             <name>GitHub repository</name>
-            <url>${scm.connection}</url>
+            <url>${project.scm.connection}</url>
         </repository>
 
         <snapshotRepository>
             <id>githubsnapshotrepo</id>
-            <name>GitHub repository</name>
-            <url>${scm.connection}</url>
+            <name>GitHub snapshot repository</name>
+            <url>${project.scm.developerConnection}</url>
         </snapshotRepository>
 
     </distributionManagement>
@@ -162,7 +162,6 @@
 				<artifactId>maven-scm-plugin</artifactId>
 				<configuration>
 					<tag>${project.artifactId}-${project.version}</tag>
-					<connectionType>developerConnection</connectionType>
 					<basedir>./</basedir>
 				</configuration>
 			</plugin>
