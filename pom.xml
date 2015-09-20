@@ -23,6 +23,16 @@
 	<name>LJ Computing - ECSR</name>
 	<description>Electronic Customer Service Representative</description>
 
+	<properties>
+		<github.username>willmorejg</github.username>
+		<net-ljcomputing-rhino.version>1.0.0-SNAPSHOT</net-ljcomputing-rhino.version>
+		<net-ljcomputing-gson.version>1.0.1-SNAPSHOT</net-ljcomputing-gson.version>
+		<net-ljcomputing-logging.version>1.0.0-SNAPSHOT</net-ljcomputing-logging.version>
+		<net-ljcomputing-random-data.version>1.0.0-SNAPSHOT</net-ljcomputing-random-data.version>
+
+		<guava.version>18.0</guava.version>
+	</properties>
+
 	<!-- Contact and License Information -->
 	<organization>
 		<name>LJ Computing</name>
@@ -41,19 +51,26 @@
 	</developers>
 
 	<scm>
-		<url>https://github.com/willmorejg/net.ljcomputing.ecsr</url>
-		<connection>scm:git:ssh://git@github.com/willmorejg/net.ljcomputing.ecsr.git</connection>
-		<developerConnection>scm:git:ssh://git@github.com/willmorejg/net.ljcomputing.ecsr.git</developerConnection>
+		<url>https://github.com/${github.username}/${project.groupId}.${project.artifactId}</url>
+		<connection>scm:git:ssh://git@github.com/${github.username}/${project.groupId}.${project.artifactId}.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com/${github.username}/${project.groupId}.${project.artifactId}.git</developerConnection>
 	</scm>
 
-	<properties>
-		<net-ljcomputing-rhino.version>1.0.0-SNAPSHOT</net-ljcomputing-rhino.version>
-		<net-ljcomputing-gson.version>1.0.1-SNAPSHOT</net-ljcomputing-gson.version>
-		<net-ljcomputing-logging.version>1.0.0-SNAPSHOT</net-ljcomputing-logging.version>
-		<net-ljcomputing-random-data.version>1.0.0-SNAPSHOT</net-ljcomputing-random-data.version>
+   <distributionManagement>
 
-		<guava.version>18.0</guava.version>
-	</properties>
+        <repository>
+            <id>githubrepo</id>
+            <name>Local file system</name>
+            <url>${project.baseUri}</url>
+        </repository>
+
+        <snapshotRepository>
+            <id>localsnapshotrepo</id>
+            <name>Local file system</name>
+            <url>${project.baseUri}</url>
+        </snapshotRepository>
+
+    </distributionManagement>
 
 	<dependencies>
 

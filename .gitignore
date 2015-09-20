@@ -57,3 +57,4 @@ Thumbs.db
 */.tomcatplugin*
 */.settings*
 */.settings/*
+/.settings/
