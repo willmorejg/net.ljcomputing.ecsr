@@ -16,6 +16,8 @@
 
 package net.ljcomputing.people.repository;
 
+import static org.junit.Assert.assertTrue;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -99,11 +101,14 @@ public class MailingAddressEntityRepositoryTest {
 	@Test
 	@Transactional
 	public void test() {
-		//repository.deleteAll();
+		repository.deleteAll();
 
 		repository.save(entity1);
 		repository.save(entity2);
 		repository.save(entity3);
+		
+		entity1.setState(State.VIRGINIA);
+		repository.save(entity1);
 
 		Result<MailingAddressEntity> set = repository.findAll();
 
@@ -111,7 +116,7 @@ public class MailingAddressEntityRepositoryTest {
 			logger.debug("------------------------->>>> entity: {}", entity.toString());
 		}
 
-		// repository.deleteAll();
+		assertTrue(true);
 	}
 
 }

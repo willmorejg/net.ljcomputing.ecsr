@@ -17,31 +17,31 @@ digraph G {
 		</table>>, URL="./Neo4JConfig.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	//net.ljcomputing.people.config.Neo4JConfig extends org.springframework.data.neo4j.config.Neo4jConfiguration
 	c1102:p -> c1076:p [dir=back,arrowtail=empty];
-	// net.ljcomputing.people.config.Neo4JConfig DEPEND org.neo4j.graphdb.GraphDatabaseService
-	c1076:p -> c1110:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
-	// net.ljcomputing.people.config.Neo4JConfig DEPEND org.springframework.context.ApplicationListener<E extends org.springframework.context.ApplicationEvent>
-	c1076:p -> c1112:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
-	// net.ljcomputing.people.config.Neo4JConfig DEPEND org.springframework.context.ApplicationListener<E extends org.springframework.context.ApplicationEvent>
-	c1076:p -> c1112:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
-	// net.ljcomputing.people.config.Neo4JConfig DEPEND org.springframework.context.ApplicationListener<E extends org.springframework.context.ApplicationEvent>
-	c1076:p -> c1112:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// net.ljcomputing.people.config.Neo4JConfig DEPEND org.springframework.data.neo4j.support.Neo4jTemplate
+	c1076:p -> c1127:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
+	// net.ljcomputing.people.config.Neo4JConfig DEPEND org.springframework.context.ApplicationListener<E extends org.springframework.context.ApplicationEvent>
+	c1076:p -> c1129:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
+	// net.ljcomputing.people.config.Neo4JConfig DEPEND org.springframework.context.ApplicationListener<E extends org.springframework.context.ApplicationEvent>
+	c1076:p -> c1129:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
+	// net.ljcomputing.people.config.Neo4JConfig DEPEND org.springframework.context.ApplicationListener<E extends org.springframework.context.ApplicationEvent>
+	c1076:p -> c1129:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
+	// net.ljcomputing.people.config.Neo4JConfig DEPEND org.neo4j.graphdb.GraphDatabaseService
 	c1076:p -> c1135:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// net.ljcomputing.people.config.Neo4JConfig DEPEND org.springframework.context.ApplicationListener<E extends org.springframework.context.ApplicationEvent>
-	c1076:p -> c1112:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
+	c1076:p -> c1129:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
+	// org.springframework.data.neo4j.support.Neo4jTemplate
+	c1127 [label=<<table title="org.springframework.data.neo4j.support.Neo4jTemplate" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> Neo4jTemplate </td></tr>
+<tr><td align="center" balign="center"><font point-size="7.0"> org.springframework.data.neo4j.support </font></td></tr>
+		</table></td></tr>
+		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// org.neo4j.graphdb.GraphDatabaseService
-	c1110 [label=<<table title="org.neo4j.graphdb.GraphDatabaseService" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c1135 [label=<<table title="org.neo4j.graphdb.GraphDatabaseService" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> GraphDatabaseService </td></tr>
 <tr><td align="center" balign="center"><font point-size="7.0"> org.neo4j.graphdb </font></td></tr>
-		</table></td></tr>
-		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=9.0];
-	// org.springframework.data.neo4j.support.Neo4jTemplate
-	c1135 [label=<<table title="org.springframework.data.neo4j.support.Neo4jTemplate" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> Neo4jTemplate </td></tr>
-<tr><td align="center" balign="center"><font point-size="7.0"> org.springframework.data.neo4j.support </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// org.springframework.data.neo4j.config.Neo4jConfiguration
@@ -52,7 +52,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// org.springframework.context.ApplicationListener<E extends org.springframework.context.ApplicationEvent>
-	c1112 [label=<<table title="org.springframework.context.ApplicationListener" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c1129 [label=<<table title="org.springframework.context.ApplicationListener" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> ApplicationListener&lt;E extends org.springframework.context.ApplicationEvent&gt; </td></tr>

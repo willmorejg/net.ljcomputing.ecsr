@@ -1,8 +1,8 @@
 <map id="G" name="G">
-<area shape="rect" id="node1_0" href="./Neo4JConfig.html" title="net.ljcomputing.people.config.Neo4JConfig" alt="" coords="385,115,476,141"/>
-<area shape="rect" id="node1" href="./Neo4JConfig.html" title="&lt;TABLE&gt;" alt="" coords="375,104,487,152"/>
-<area shape="rect" id="node3" href="null" title="&lt;TABLE&gt;" alt="" coords="5,201,173,266"/>
-<area shape="rect" id="node4" href="null" title="&lt;TABLE&gt;" alt="" coords="198,201,663,266"/>
-<area shape="rect" id="node5" href="null" title="&lt;TABLE&gt;" alt="" coords="688,209,893,258"/>
-<area shape="rect" id="node2" href="null" title="&lt;TABLE&gt;" alt="" coords="331,6,530,55"/>
+<area shape="rect" id="node1_0" href="./Neo4JConfig.html" title="net.ljcomputing.people.config.Neo4JConfig" alt="" coords="423,115,513,141"/>
+<area shape="rect" id="node1" href="./Neo4JConfig.html" title="&lt;TABLE&gt;" alt="" coords="412,104,524,152"/>
+<area shape="rect" id="node3" href="null" title="&lt;TABLE&gt;" alt="" coords="5,209,211,258"/>
+<area shape="rect" id="node4" href="null" title="&lt;TABLE&gt;" alt="" coords="235,201,701,266"/>
+<area shape="rect" id="node5" href="null" title="&lt;TABLE&gt;" alt="" coords="725,201,893,266"/>
+<area shape="rect" id="node2" href="null" title="&lt;TABLE&gt;" alt="" coords="369,6,567,55"/>
 </map>

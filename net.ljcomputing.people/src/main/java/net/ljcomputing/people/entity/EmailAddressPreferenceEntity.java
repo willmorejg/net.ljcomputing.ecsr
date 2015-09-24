@@ -51,9 +51,11 @@ public class EmailAddressPreferenceEntity extends AbstractPersonalContactPrefere
 	/**
 	 * Instantiates a new email address preference entity.
 	 *
-	 * @param personEntity the person entity @param emailAddressEntity the email
-	 * address entity @param contactOrder the contact order @param contactType
-	 * the contact type @param id the id
+	 * @param personEntity the person entity
+	 * @param emailAddressEntity the email address entity
+	 * @param contactOrder the contact order
+	 * @param contactType the contact type
+	 * @param id the id
 	 */
 	public EmailAddressPreferenceEntity(PersonEntity personEntity, EmailAddressEntity emailAddressEntity,
 			ContactOrder contactOrder, ContactType contactType, Long id) {
@@ -65,7 +67,7 @@ public class EmailAddressPreferenceEntity extends AbstractPersonalContactPrefere
 	}
 
 	/**
-	 * Instantiates a new email address preference entity (copy constructor).
+	 * Instantiates a new email address preference entity.
 	 *
 	 * @param emailAddressPreferenceEntity the email address preference entity
 	 */

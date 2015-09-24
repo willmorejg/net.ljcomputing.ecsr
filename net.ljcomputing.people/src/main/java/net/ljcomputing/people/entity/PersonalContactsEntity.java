@@ -17,6 +17,7 @@
 package net.ljcomputing.people.entity;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 import org.springframework.data.neo4j.annotation.Fetch;
@@ -99,6 +100,23 @@ public class PersonalContactsEntity extends PersonEntity {
 		getEmailPreferences()
 				.add(new EmailAddressPreferenceEntity(this, emailAddressEntity, contactOrder, contactType, null));
 	}
+	
+	//TODO verify
+	/**
+	 * Removes the email preference.
+	 *
+	 * @param emailAddressPreferenceEntity the email address preference entity
+	 */
+	public void removeEmailPreference(EmailAddressPreferenceEntity emailAddressPreferenceEntity) {
+		Iterator<EmailAddressPreferenceEntity> it = getEmailPreferences().iterator();
+		while(it.hasNext()) {
+			EmailAddressPreferenceEntity entity = (EmailAddressPreferenceEntity) it.next();
+			if(emailAddressPreferenceEntity.equals(entity)) {
+				it.remove();
+				break;
+			}
+		}
+	}
 
 	/**
 	 * Gets the phone preferences.
@@ -130,6 +148,23 @@ public class PersonalContactsEntity extends PersonEntity {
 			ContactType contactType, PhoneType phoneType) {
 		getPhonePreferences().add(
 				new PhoneNumberPreferenceEntity(this, phoneNumberEntity, contactOrder, contactType, phoneType, null));
+	}
+	
+	//TODO verify
+	/**
+	 * Removes the phone preference.
+	 *
+	 * @param phoneNumberPreferenceEntity the phone number preference entity
+	 */
+	public void removePhonePreference(PhoneNumberPreferenceEntity phoneNumberPreferenceEntity) {
+		Iterator<PhoneNumberPreferenceEntity> it = getPhonePreferences().iterator();
+		while(it.hasNext()) {
+			PhoneNumberPreferenceEntity entity = (PhoneNumberPreferenceEntity) it.next();
+			if(phoneNumberPreferenceEntity.equals(entity)) {
+				it.remove();
+				break;
+			}
+		}
 	}
 
 	/**
@@ -163,6 +198,23 @@ public class PersonalContactsEntity extends PersonEntity {
 		getMailingPreferences().add(new MailingAddressPreferenceEntity(this, mailingAddressEntity, contactOrder,
 				contactType, mailingAddressType, null));
 	}
+	
+	//TODO verify
+	/**
+	 * Removes the mailing preference.
+	 *
+	 * @param mailingAddressPreferenceEntity the mailing address preference entity
+	 */
+	public void removeMailingPreference(MailingAddressPreferenceEntity mailingAddressPreferenceEntity) {
+		Iterator<MailingAddressPreferenceEntity> it = getMailingPreferences().iterator();
+		while(it.hasNext()) {
+			MailingAddressPreferenceEntity entity = (MailingAddressPreferenceEntity) it.next();
+			if(mailingAddressPreferenceEntity.equals(entity)) {
+				it.remove();
+				break;
+			}
+		}
+	}
 
 	/* (non-Javadoc)
 	 * @see net.ljcomputing.people.domain.Person#isValid()
@@ -184,7 +236,8 @@ public class PersonalContactsEntity extends PersonEntity {
 	/**
 	 * Validate mailing preferences.
 	 *
-	 * @param result the result @return the boolean
+	 * @param result the result 
+	 * @return the boolean
 	 */
 	private Boolean validateMailingPreferences(Boolean result) {
 		if (result && null != getMailingPreferences()) {
@@ -202,7 +255,8 @@ public class PersonalContactsEntity extends PersonEntity {
 	/**
 	 * Validate phone preferences.
 	 *
-	 * @param result the result @return the boolean
+	 * @param result the result 
+	 * @return the boolean
 	 */
 	private Boolean validatePhonePreferences(Boolean result) {
 		if (result && null != getPhonePreferences()) {
@@ -220,7 +274,8 @@ public class PersonalContactsEntity extends PersonEntity {
 	/**
 	 * Validate email preferences.
 	 *
-	 * @param result the result @return the boolean
+	 * @param result the result 
+	 * @return the boolean
 	 */
 	private Boolean validateEmailPreferences(Boolean result) {
 		if (result && null != getEmailPreferences()) {

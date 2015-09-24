@@ -16,6 +16,8 @@
 
 package net.ljcomputing.people.repository;
 
+import static org.junit.Assert.assertTrue;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -30,7 +32,6 @@ import org.springframework.transaction.annotation.Transactional;
 import net.ljcomputing.people.PeopleApplication;
 import net.ljcomputing.people.domain.Person;
 import net.ljcomputing.people.entity.PersonEntity;
-import net.ljcomputing.people.service.PersonService;
 
 /**
  * Person entity repository tests.
@@ -48,10 +49,6 @@ public class PersonEntityRepositoryTest {
 	/** The repository. */
 	@Autowired
 	private PersonRepository repository;
-
-	/** The person service. */
-	@Autowired
-	private PersonService personService;
 
 	/** The person 1. */
 	private Person person1 = new Person();
@@ -95,25 +92,21 @@ public class PersonEntityRepositoryTest {
 	@Test
 	@Transactional
 	public void test() throws Exception {
-		//repository.deleteAll();
+		repository.deleteAll();
 
 		repository.save(entity1);
 		repository.save(entity2);
 		repository.save(entity3);
 
 		entity1.setFirstName("Warren");
-
-		personService.update(entity1);
-		personService.save(entity2);
-		personService.save(entity3);
+		repository.save(entity1);
 
 		Result<PersonEntity> set = repository.findAll();
-		// List<PersonEntity> set = repository.findByFullNameLike("*Da*");
 
 		for (PersonEntity entity : set) {
 			logger.debug("------------------------->>>> entity: {}", entity.toString());
 		}
 
-		// repository.deleteAll();
+		assertTrue(true);
 	}
 }

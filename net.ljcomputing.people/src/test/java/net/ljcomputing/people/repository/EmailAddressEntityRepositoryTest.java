@@ -16,6 +16,8 @@
 
 package net.ljcomputing.people.repository;
 
+import static org.junit.Assert.assertTrue;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -90,11 +92,14 @@ public class EmailAddressEntityRepositoryTest {
 	@Test
 	@Transactional
 	public void test() {
-		//repository.deleteAll();
+		repository.deleteAll();
 
 		repository.save(entity1);
 		repository.save(entity2);
 		repository.save(entity3);
+		
+		entity1.setDomain("somewhere.net");
+		repository.save(entity1);
 
 		Result<EmailAddressEntity> set = repository.findAll();
 
@@ -102,7 +107,7 @@ public class EmailAddressEntityRepositoryTest {
 			logger.debug("------------------------->>>> entity: {}", entity.toString());
 		}
 
-		// repository.deleteAll();
+		assertTrue(true);
 	}
 
 }

@@ -17,12 +17,12 @@ digraph G {
 		</table>>, URL="./EmailAddressController.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// net.ljcomputing.people.web.controller.EmailAddressController NAVASSOC net.ljcomputing.people.service.EmailAddressService
 	c96:p -> c103:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
-	// net.ljcomputing.people.web.controller.EmailAddressController DEPEND net.ljcomputing.people.entity.EmailAddressEntity
-	c96:p -> c106:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// net.ljcomputing.people.web.controller.EmailAddressController DEPEND net.ljcomputing.people.domain.EmailAddress
+	c96:p -> c105:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
+	// net.ljcomputing.people.web.controller.EmailAddressController DEPEND net.ljcomputing.people.entity.EmailAddressEntity
 	c96:p -> c108:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// net.ljcomputing.people.domain.EmailAddress
-	c108 [label=<<table title="net.ljcomputing.people.domain.EmailAddress" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c105 [label=<<table title="net.ljcomputing.people.domain.EmailAddress" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> EmailAddress </td></tr>
 <tr><td align="center" balign="center"><font point-size="7.0"> net.ljcomputing.people.domain </font></td></tr>
@@ -37,7 +37,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// net.ljcomputing.people.entity.EmailAddressEntity
-	c106 [label=<<table title="net.ljcomputing.people.entity.EmailAddressEntity" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c108 [label=<<table title="net.ljcomputing.people.entity.EmailAddressEntity" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> EmailAddressEntity </td></tr>
 <tr><td align="center" balign="center"><font point-size="7.0"> net.ljcomputing.people.entity </font></td></tr>

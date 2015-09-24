@@ -84,7 +84,7 @@
 <span class="sourceLineNo">076</span>        @LogEvent(level = Level.INFO, message = "Creating Person")<a name="line.76"></a>
 <span class="sourceLineNo">077</span>        @RequestMapping(method = RequestMethod.POST)<a name="line.77"></a>
 <span class="sourceLineNo">078</span>        public @ResponseBody Person createPerson(@RequestBody Person person) {<a name="line.78"></a>
-<span class="sourceLineNo">079</span>                return personService.save(person);<a name="line.79"></a>
+<span class="sourceLineNo">079</span>                return personService.create(person);<a name="line.79"></a>
 <span class="sourceLineNo">080</span>        }<a name="line.80"></a>
 <span class="sourceLineNo">081</span><a name="line.81"></a>
 <span class="sourceLineNo">082</span>        /**<a name="line.82"></a>
@@ -137,10 +137,10 @@
 <span class="sourceLineNo">129</span>                                response.put("total", list.size());<a name="line.129"></a>
 <span class="sourceLineNo">130</span>                        }<a name="line.130"></a>
 <span class="sourceLineNo">131</span>                } else if (page != null) {<a name="line.131"></a>
-<span class="sourceLineNo">132</span>                        list = personService.findAll(page);<a name="line.132"></a>
+<span class="sourceLineNo">132</span>                        list = personService.readAll(page);<a name="line.132"></a>
 <span class="sourceLineNo">133</span>                        response.put("total", personService.getRepository().count());<a name="line.133"></a>
 <span class="sourceLineNo">134</span>                } else {<a name="line.134"></a>
-<span class="sourceLineNo">135</span>                        list = personService.findAll();<a name="line.135"></a>
+<span class="sourceLineNo">135</span>                        list = personService.readAll();<a name="line.135"></a>
 <span class="sourceLineNo">136</span>                        response.put("total", personService.getRepository().count());<a name="line.136"></a>
 <span class="sourceLineNo">137</span>                }<a name="line.137"></a>
 <span class="sourceLineNo">138</span><a name="line.138"></a>
@@ -160,7 +160,7 @@
 <span class="sourceLineNo">152</span>        @LogEvent(level = Level.INFO, message = "Get Person")<a name="line.152"></a>
 <span class="sourceLineNo">153</span>        @RequestMapping(value = "/{uuidString}", method = RequestMethod.GET)<a name="line.153"></a>
 <span class="sourceLineNo">154</span>        public @ResponseBody PersonalContactsEntity getPerson(@PathVariable String uuidString) {<a name="line.154"></a>
-<span class="sourceLineNo">155</span>                PersonEntity personEntity = personService.findByUuidString(uuidString);<a name="line.155"></a>
+<span class="sourceLineNo">155</span>                PersonEntity personEntity = personService.readByUuidString(uuidString);<a name="line.155"></a>
 <span class="sourceLineNo">156</span>                return personalContactsService.readPersonalContacts(personEntity);<a name="line.156"></a>
 <span class="sourceLineNo">157</span>        }<a name="line.157"></a>
 <span class="sourceLineNo">158</span><a name="line.158"></a>
@@ -199,7 +199,7 @@
 <span class="sourceLineNo">191</span>                personService.delete(uuidString);<a name="line.191"></a>
 <span class="sourceLineNo">192</span>                PageRequest page = getPageRequest(1, 10, "lastName", "asc");<a name="line.192"></a>
 <span class="sourceLineNo">193</span>                Map&lt;String, Object&gt; response = new HashMap&lt;String, Object&gt;();<a name="line.193"></a>
-<span class="sourceLineNo">194</span>                response.put("rows", personService.findAll(page));<a name="line.194"></a>
+<span class="sourceLineNo">194</span>                response.put("rows", personService.readAll(page));<a name="line.194"></a>
 <span class="sourceLineNo">195</span>                response.put("total", personService.getRepository().count());<a name="line.195"></a>
 <span class="sourceLineNo">196</span>                return response;<a name="line.196"></a>
 <span class="sourceLineNo">197</span>        }<a name="line.197"></a>

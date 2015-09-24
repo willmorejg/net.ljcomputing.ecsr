@@ -98,14 +98,14 @@
 <span class="sourceLineNo">090</span>         *            the domain<a name="line.90"></a>
 <span class="sourceLineNo">091</span>         * @return the t<a name="line.91"></a>
 <span class="sourceLineNo">092</span>         */<a name="line.92"></a>
-<span class="sourceLineNo">093</span>        T save(T domain);<a name="line.93"></a>
+<span class="sourceLineNo">093</span>        T create(T domain);<a name="line.93"></a>
 <span class="sourceLineNo">094</span><a name="line.94"></a>
 <span class="sourceLineNo">095</span>        /**<a name="line.95"></a>
 <span class="sourceLineNo">096</span>         * Find all of the entities for the associated domain.<a name="line.96"></a>
 <span class="sourceLineNo">097</span>         *<a name="line.97"></a>
 <span class="sourceLineNo">098</span>         * @return a List of entities<a name="line.98"></a>
 <span class="sourceLineNo">099</span>         */<a name="line.99"></a>
-<span class="sourceLineNo">100</span>        List&lt;S&gt; findAll();<a name="line.100"></a>
+<span class="sourceLineNo">100</span>        List&lt;S&gt; readAll();<a name="line.100"></a>
 <span class="sourceLineNo">101</span><a name="line.101"></a>
 <span class="sourceLineNo">102</span>        /**<a name="line.102"></a>
 <span class="sourceLineNo">103</span>         * Find all of the entities for the associated domain.<a name="line.103"></a>
@@ -114,7 +114,7 @@
 <span class="sourceLineNo">106</span>         *            the page<a name="line.106"></a>
 <span class="sourceLineNo">107</span>         * @return the Lists the<a name="line.107"></a>
 <span class="sourceLineNo">108</span>         */<a name="line.108"></a>
-<span class="sourceLineNo">109</span>        List&lt;S&gt; findAll(Pageable page);<a name="line.109"></a>
+<span class="sourceLineNo">109</span>        List&lt;S&gt; readAll(Pageable page);<a name="line.109"></a>
 <span class="sourceLineNo">110</span><a name="line.110"></a>
 <span class="sourceLineNo">111</span>        /**<a name="line.111"></a>
 <span class="sourceLineNo">112</span>         * Find the entity by the give UUID String.<a name="line.112"></a>
@@ -123,7 +123,7 @@
 <span class="sourceLineNo">115</span>         *            the UUID String<a name="line.115"></a>
 <span class="sourceLineNo">116</span>         * @return the s<a name="line.116"></a>
 <span class="sourceLineNo">117</span>         */<a name="line.117"></a>
-<span class="sourceLineNo">118</span>        S findByUuidString(String uuidString);<a name="line.118"></a>
+<span class="sourceLineNo">118</span>        S readByUuidString(String uuidString);<a name="line.118"></a>
 <span class="sourceLineNo">119</span><a name="line.119"></a>
 <span class="sourceLineNo">120</span>        /**<a name="line.120"></a>
 <span class="sourceLineNo">121</span>         * Find the entity by the give UUID.<a name="line.121"></a>
@@ -132,7 +132,7 @@
 <span class="sourceLineNo">124</span>         *            the UUID<a name="line.124"></a>
 <span class="sourceLineNo">125</span>         * @return the s<a name="line.125"></a>
 <span class="sourceLineNo">126</span>         */<a name="line.126"></a>
-<span class="sourceLineNo">127</span>        S findByUuid(UUID uuid);<a name="line.127"></a>
+<span class="sourceLineNo">127</span>        S readByUuid(UUID uuid);<a name="line.127"></a>
 <span class="sourceLineNo">128</span><a name="line.128"></a>
 <span class="sourceLineNo">129</span>        /**<a name="line.129"></a>
 <span class="sourceLineNo">130</span>         * Find the associated entity by the given indexed value.<a name="line.130"></a>
@@ -140,7 +140,7 @@
 <span class="sourceLineNo">132</span>         * @param indexedValue the indexed value<a name="line.132"></a>
 <span class="sourceLineNo">133</span>         * @return the s<a name="line.133"></a>
 <span class="sourceLineNo">134</span>         */<a name="line.134"></a>
-<span class="sourceLineNo">135</span>        S findByIndexedValue(String indexedValue);<a name="line.135"></a>
+<span class="sourceLineNo">135</span>        S readByIndexedValue(String indexedValue);<a name="line.135"></a>
 <span class="sourceLineNo">136</span>        <a name="line.136"></a>
 <span class="sourceLineNo">137</span>        /**<a name="line.137"></a>
 <span class="sourceLineNo">138</span>         * Search for instances where the given property value is like the provided<a name="line.138"></a>
@@ -189,7 +189,7 @@
 <span class="sourceLineNo">181</span>         *            the id<a name="line.181"></a>
 <span class="sourceLineNo">182</span>         * @return the s<a name="line.182"></a>
 <span class="sourceLineNo">183</span>         */<a name="line.183"></a>
-<span class="sourceLineNo">184</span>        S findById(Long id);<a name="line.184"></a>
+<span class="sourceLineNo">184</span>        S readById(Long id);<a name="line.184"></a>
 <span class="sourceLineNo">185</span><a name="line.185"></a>
 <span class="sourceLineNo">186</span>        /**<a name="line.186"></a>
 <span class="sourceLineNo">187</span>         * Update the entity associated with the values of the given domain.<a name="line.187"></a>

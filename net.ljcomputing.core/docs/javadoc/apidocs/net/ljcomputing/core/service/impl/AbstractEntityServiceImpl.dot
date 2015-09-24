@@ -44,23 +44,23 @@ digraph G {
 	c99:p -> c101:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// net.ljcomputing.core.service.impl.AbstractEntityServiceImpl<T extends net.ljcomputing.core.domain.AbstractDomain, S extends net.ljcomputing.core.entity.Entity, R extends org.springframework.data.neo4j.repository.CRUDRepository<S>> NAVASSOC org.springframework.data.neo4j.support.Neo4jTemplate
 	c99:p -> c102:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
-	// net.ljcomputing.core.service.impl.AbstractEntityServiceImpl<T extends net.ljcomputing.core.domain.AbstractDomain, S extends net.ljcomputing.core.entity.Entity, R extends org.springframework.data.neo4j.repository.CRUDRepository<S>> DEPEND org.springframework.data.domain.Pageable
-	c99:p -> c103:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
-	// net.ljcomputing.core.service.impl.AbstractEntityServiceImpl<T extends net.ljcomputing.core.domain.AbstractDomain, S extends net.ljcomputing.core.entity.Entity, R extends org.springframework.data.neo4j.repository.CRUDRepository<S>> DEPEND net.ljcomputing.gson.converter.GsonConverterService
-	c99:p -> c101:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// net.ljcomputing.core.service.impl.AbstractEntityServiceImpl<T extends net.ljcomputing.core.domain.AbstractDomain, S extends net.ljcomputing.core.entity.Entity, R extends org.springframework.data.neo4j.repository.CRUDRepository<S>> DEPEND net.ljcomputing.core.entity.Entity
 	c99:p -> c95:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
+	// net.ljcomputing.core.service.impl.AbstractEntityServiceImpl<T extends net.ljcomputing.core.domain.AbstractDomain, S extends net.ljcomputing.core.entity.Entity, R extends org.springframework.data.neo4j.repository.CRUDRepository<S>> DEPEND net.ljcomputing.gson.converter.GsonConverterService
+	c99:p -> c101:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// net.ljcomputing.core.service.impl.AbstractEntityServiceImpl<T extends net.ljcomputing.core.domain.AbstractDomain, S extends net.ljcomputing.core.entity.Entity, R extends org.springframework.data.neo4j.repository.CRUDRepository<S>> DEPEND org.springframework.data.domain.Sort
+	c99:p -> c103:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
+	// net.ljcomputing.core.service.impl.AbstractEntityServiceImpl<T extends net.ljcomputing.core.domain.AbstractDomain, S extends net.ljcomputing.core.entity.Entity, R extends org.springframework.data.neo4j.repository.CRUDRepository<S>> DEPEND org.springframework.data.domain.Pageable
 	c99:p -> c104:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// net.ljcomputing.core.service.impl.AbstractEntityServiceImpl<T extends net.ljcomputing.core.domain.AbstractDomain, S extends net.ljcomputing.core.entity.Entity, R extends org.springframework.data.neo4j.repository.CRUDRepository<S>> DEPEND org.springframework.data.neo4j.repository.CRUDRepository<T>
 	c99:p -> c105:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// net.ljcomputing.core.service.impl.AbstractEntityServiceImpl<T extends net.ljcomputing.core.domain.AbstractDomain, S extends net.ljcomputing.core.entity.Entity, R extends org.springframework.data.neo4j.repository.CRUDRepository<S>> DEPEND net.ljcomputing.core.domain.AbstractDomain
 	c99:p -> c98:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
-	// net.ljcomputing.core.service.EntityService<T, S, R> DEPEND org.springframework.data.domain.Pageable
-	c100:p -> c103:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// net.ljcomputing.core.service.EntityService<T, S, R> DEPEND net.ljcomputing.gson.converter.GsonConverterService
 	c100:p -> c101:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// net.ljcomputing.core.service.EntityService<T, S, R> DEPEND org.springframework.data.domain.Sort
+	c100:p -> c103:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
+	// net.ljcomputing.core.service.EntityService<T, S, R> DEPEND org.springframework.data.domain.Pageable
 	c100:p -> c104:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// org.springframework.data.neo4j.repository.CRUDRepository<T>
 	c105 [label=<<table title="org.springframework.data.neo4j.repository.CRUDRepository" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
@@ -85,18 +85,18 @@ digraph G {
 <tr><td align="center" balign="center"><font point-size="7.0"> net.ljcomputing.gson.converter </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=9.0];
-	// org.springframework.data.domain.Pageable
-	c103 [label=<<table title="org.springframework.data.domain.Pageable" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	// org.springframework.data.domain.Sort
+	c103 [label=<<table title="org.springframework.data.domain.Sort" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
-<tr><td align="center" balign="center"> Pageable </td></tr>
+<tr><td align="center" balign="center"> Sort </td></tr>
 <tr><td align="center" balign="center"><font point-size="7.0"> org.springframework.data.domain </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=9.0];
-	// org.springframework.data.domain.Sort
-	c104 [label=<<table title="org.springframework.data.domain.Sort" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	// org.springframework.data.domain.Pageable
+	c104 [label=<<table title="org.springframework.data.domain.Pageable" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> Sort </td></tr>
+<tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
+<tr><td align="center" balign="center"> Pageable </td></tr>
 <tr><td align="center" balign="center"><font point-size="7.0"> org.springframework.data.domain </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=9.0];

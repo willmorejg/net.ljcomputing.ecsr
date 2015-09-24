@@ -46,7 +46,8 @@ public class PeopleApplication implements CommandLineRunner {
 	/**
 	 * The main method.
 	 *
-	 * @param args the arguments @throws Exception the exception
+	 * @param args the arguments 
+	 * @throws Exception the exception
 	 */
 	public static void main(String[] args) throws Exception {
 		SpringApplication.run(PeopleApplication.class, args);

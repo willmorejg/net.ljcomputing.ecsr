@@ -16,6 +16,8 @@
 
 package net.ljcomputing.people.repository;
 
+import static org.junit.Assert.assertTrue;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -73,7 +75,7 @@ public class PhoneNumberEntityRepositoryTest {
 		phone1.setAreaCode("908");
 		phone1.setPrefix("687");
 		phone1.setNumber("5715");
-		
+
 		entity1 = new PhoneNumberEntity(phone1);
 
 		phone2.setAreaCode("908");
@@ -93,11 +95,14 @@ public class PhoneNumberEntityRepositoryTest {
 	@Test
 	@Transactional
 	public void test() {
-		//repository.deleteAll();
+		repository.deleteAll();
 
 		repository.save(entity1);
 		repository.save(entity2);
 		repository.save(entity3);
+		
+		entity1.setAreaCode("202");
+		repository.save(entity1);
 
 		Result<PhoneNumberEntity> set = repository.findAll();
 
@@ -105,7 +110,6 @@ public class PhoneNumberEntityRepositoryTest {
 			logger.debug("------------------------->>>> entity: {}", entity.toString());
 		}
 
-		// repository.deleteAll();
+		assertTrue(true);
 	}
-
 }

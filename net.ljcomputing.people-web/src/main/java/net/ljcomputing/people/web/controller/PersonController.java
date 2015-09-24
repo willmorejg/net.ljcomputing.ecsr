@@ -76,7 +76,7 @@ public class PersonController extends AbstractController {
 	@LogEvent(level = Level.INFO, message = "Creating Person")
 	@RequestMapping(method = RequestMethod.POST)
 	public @ResponseBody Person createPerson(@RequestBody Person person) {
-		return personService.save(person);
+		return personService.create(person);
 	}
 
 	/**
@@ -129,10 +129,10 @@ public class PersonController extends AbstractController {
 				response.put("total", list.size());
 			}
 		} else if (page != null) {
-			list = personService.findAll(page);
+			list = personService.readAll(page);
 			response.put("total", personService.getRepository().count());
 		} else {
-			list = personService.findAll();
+			list = personService.readAll();
 			response.put("total", personService.getRepository().count());
 		}
 
@@ -152,7 +152,7 @@ public class PersonController extends AbstractController {
 	@LogEvent(level = Level.INFO, message = "Get Person")
 	@RequestMapping(value = "/{uuidString}", method = RequestMethod.GET)
 	public @ResponseBody PersonalContactsEntity getPerson(@PathVariable String uuidString) {
-		PersonEntity personEntity = personService.findByUuidString(uuidString);
+		PersonEntity personEntity = personService.readByUuidString(uuidString);
 		return personalContactsService.readPersonalContacts(personEntity);
 	}
 
@@ -191,7 +191,7 @@ public class PersonController extends AbstractController {
 		personService.delete(uuidString);
 		PageRequest page = getPageRequest(1, 10, "lastName", "asc");
 		Map<String, Object> response = new HashMap<String, Object>();
-		response.put("rows", personService.findAll(page));
+		response.put("rows", personService.readAll(page));
 		response.put("total", personService.getRepository().count());
 		return response;
 	}

@@ -111,18 +111,18 @@ public abstract class AbstractEntityServiceImpl<T extends AbstractDomain, S exte
 		S entity = getNewEntityInstance();
 		entity = cloneFromDomain(domain, entity.getClass());
 		try {
-			return findByUuid(domain.getUuid());
+			return readByUuid(domain.getUuid());
 		} catch (Exception e) {
 			return null;
 		}
 	}
 
 	/* (non-Javadoc)
-	 * @see net.ljcomputing.core.service.EntityService#save(java.lang.Object)
+	 * @see net.ljcomputing.core.service.EntityService#create(java.lang.Object)
 	 */
 	@SuppressWarnings({ "unchecked" })
 	@Transactional
-	public T save(T domain) {
+	public T create(T domain) {
 		S entity = exists(domain);
 		if (null == entity) {
 			entity = cloneFromDomain(domain, getEntityClass());
@@ -132,36 +132,36 @@ public abstract class AbstractEntityServiceImpl<T extends AbstractDomain, S exte
 	}
 
 	/* (non-Javadoc)
-	 * @see net.ljcomputing.core.service.EntityService#findAll()
+	 * @see net.ljcomputing.core.service.EntityService#readAll()
 	 */
 	@Transactional
-	public List<S> findAll() {
+	public List<S> readAll() {
 		return (List<S>) Lists.newArrayList(getRepository().findAll());
 	}
 
 	/* (non-Javadoc)
-	 * @see net.ljcomputing.core.service.EntityService#findAll(org.springframework.data.domain.Pageable)
+	 * @see net.ljcomputing.core.service.EntityService#readAll(org.springframework.data.domain.Pageable)
 	 */
 	@Transactional
-	public List<S> findAll(Pageable page) {
+	public List<S> readAll(Pageable page) {
 		return (List<S>) Lists.newArrayList(getRepository().findAll(page));
 	}
 
 	/* (non-Javadoc)
-	 * @see net.ljcomputing.core.service.EntityService#findByUuid(java.util.UUID)
+	 * @see net.ljcomputing.core.service.EntityService#readByUuid(java.util.UUID)
 	 */
 	@Transactional
-	public S findByUuid(UUID uuid) {
+	public S readByUuid(UUID uuid) {
 		String query = String.format("MATCH (n: %s) WHERE n.uuid='%s' RETURN n", getEntityClass().getSimpleName(),
 				uuid);
 		return getRepository().query(query, null).singleOrNull();
 	}
 
 	/* (non-Javadoc)
-	 * @see net.ljcomputing.core.service.EntityService#findByIndexedValue(java.lang.String)
+	 * @see net.ljcomputing.core.service.EntityService#readByIndexedValue(java.lang.String)
 	 */
 	@Transactional
-	public S findByIndexedValue(String indexedValue) {
+	public S readByIndexedValue(String indexedValue) {
 		String query = String.format("MATCH (n:%s) WHERE n.indexedValue='%s' RETURN n",
 				getEntityClass().getSimpleName(), indexedValue);
 		return getRepository().query(query, null).singleOrNull();
@@ -198,21 +198,21 @@ public abstract class AbstractEntityServiceImpl<T extends AbstractDomain, S exte
 	}
 
 	/* (non-Javadoc)
-	 * @see net.ljcomputing.core.service.EntityService#findByUuidString(java.lang.String)
+	 * @see net.ljcomputing.core.service.EntityService#readByUuidString(java.lang.String)
 	 */
-	public S findByUuidString(String uuidString) {
+	public S readByUuidString(String uuidString) {
 		if (uuidString != null) {
-			return findByUuid(UUID.fromString(uuidString));
+			return readByUuid(UUID.fromString(uuidString));
 		} else {
 			return null;
 		}
 	}
 
 	/* (non-Javadoc)
-	 * @see net.ljcomputing.core.service.EntityService#findById(java.lang.Long)
+	 * @see net.ljcomputing.core.service.EntityService#readById(java.lang.Long)
 	 */
 	@Transactional
-	public S findById(Long id) {
+	public S readById(Long id) {
 		return getRepository().findOne(id);
 	}
 
@@ -250,7 +250,7 @@ public abstract class AbstractEntityServiceImpl<T extends AbstractDomain, S exte
 	 */
 	@Transactional
 	public void delete(UUID uuid) {
-		S entity = findByUuid(uuid);
+		S entity = readByUuid(uuid);
 		if (null != entity) {
 			getRepository().delete(entity);
 		}

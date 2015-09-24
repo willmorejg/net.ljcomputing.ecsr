@@ -25,10 +25,10 @@ digraph G {
 		</table>>, URL="../entity/PersonEntity.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	//net.ljcomputing.people.repository.PersonRepository implements org.springframework.data.neo4j.repository.CRUDRepository<T>
 	c1341:p -> c1304:p [dir=back,arrowtail=empty,style=dashed];
-	// net.ljcomputing.people.repository.PersonRepository DEPEND net.ljcomputing.people.entity.PersonEntity
-	c1304:p -> c1315:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// net.ljcomputing.people.repository.PersonRepository DEPEND org.springframework.data.domain.Sort
 	c1304:p -> c1342:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
+	// net.ljcomputing.people.repository.PersonRepository DEPEND net.ljcomputing.people.entity.PersonEntity
+	c1304:p -> c1315:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// net.ljcomputing.people.repository.PersonRepository DEPEND org.springframework.data.domain.Pageable
 	c1304:p -> c1343:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// org.springframework.data.neo4j.repository.CRUDRepository<T>

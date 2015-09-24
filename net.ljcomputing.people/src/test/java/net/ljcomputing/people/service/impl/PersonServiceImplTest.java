@@ -1,5 +1,7 @@
 package net.ljcomputing.people.service.impl;
 
+import static org.junit.Assert.assertTrue;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -46,22 +48,27 @@ public class PersonServiceImplTest {
 	public void test() {
 		personService.deleteAll();
 		
-		person = personService.save(person);
+		person = personService.create(person);
 
-		for (Person p : personService.findAll()) {
+		for (Person p : personService.readAll()) {
 			logger.debug("person: {}", p.toString());
 		}
 
-		logger.debug("person by uuid: {}", personService.findByUuid(person.getUuid()).toString());
+		logger.debug("person by uuid: {}", personService.readByUuid(person.getUuid()).toString());
 
 		person.setMiddleName("George");
 		person = personService.update(person);
-		logger.debug("person by uuid - after update: {}", personService.findByUuid(person.getUuid()).toString());
+		
+		logger.debug("person by uuid - after update: {}", personService.readByUuid(person.getUuid()).toString());
 
 		personService.delete(person);
+		
 		logger.debug("  after delete");
-		for (Person p : personService.findAll()) {
+		
+		for (Person p : personService.readAll()) {
 			logger.debug("person: {}", p.toString());
 		}
+
+		assertTrue(true);
 	}
 }

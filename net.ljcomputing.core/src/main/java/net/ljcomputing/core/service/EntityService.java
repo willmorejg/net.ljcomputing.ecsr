@@ -90,14 +90,14 @@ public interface EntityService<T, S, R> {
 	 *            the domain
 	 * @return the t
 	 */
-	T save(T domain);
+	T create(T domain);
 
 	/**
 	 * Find all of the entities for the associated domain.
 	 *
 	 * @return a List of entities
 	 */
-	List<S> findAll();
+	List<S> readAll();
 
 	/**
 	 * Find all of the entities for the associated domain.
@@ -106,7 +106,7 @@ public interface EntityService<T, S, R> {
 	 *            the page
 	 * @return the Lists the
 	 */
-	List<S> findAll(Pageable page);
+	List<S> readAll(Pageable page);
 
 	/**
 	 * Find the entity by the give UUID String.
@@ -115,7 +115,7 @@ public interface EntityService<T, S, R> {
 	 *            the UUID String
 	 * @return the s
 	 */
-	S findByUuidString(String uuidString);
+	S readByUuidString(String uuidString);
 
 	/**
 	 * Find the entity by the give UUID.
@@ -124,7 +124,7 @@ public interface EntityService<T, S, R> {
 	 *            the UUID
 	 * @return the s
 	 */
-	S findByUuid(UUID uuid);
+	S readByUuid(UUID uuid);
 
 	/**
 	 * Find the associated entity by the given indexed value.
@@ -132,7 +132,7 @@ public interface EntityService<T, S, R> {
 	 * @param indexedValue the indexed value
 	 * @return the s
 	 */
-	S findByIndexedValue(String indexedValue);
+	S readByIndexedValue(String indexedValue);
 	
 	/**
 	 * Search for instances where the given property value is like the provided
@@ -181,7 +181,7 @@ public interface EntityService<T, S, R> {
 	 *            the id
 	 * @return the s
 	 */
-	S findById(Long id);
+	S readById(Long id);
 
 	/**
 	 * Update the entity associated with the values of the given domain.

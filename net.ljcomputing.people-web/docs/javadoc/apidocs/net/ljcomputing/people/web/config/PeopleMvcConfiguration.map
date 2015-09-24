@@ -1,10 +1,10 @@
 <map id="G" name="G">
-<area shape="rect" id="node1_0" href="./PeopleMvcConfiguration.html" title="net.ljcomputing.people.web.config.PeopleMvcConfiguration" alt="" coords="547,115,701,141"/>
-<area shape="rect" id="node1" href="./PeopleMvcConfiguration.html" title="&lt;TABLE&gt;" alt="" coords="537,104,711,152"/>
-<area shape="rect" id="node3" href="null" title="&lt;TABLE&gt;" alt="" coords="5,209,200,258"/>
-<area shape="rect" id="node4" href="null" title="&lt;TABLE&gt;" alt="" coords="224,209,475,258"/>
-<area shape="rect" id="node5" href="null" title="&lt;TABLE&gt;" alt="" coords="499,209,749,258"/>
-<area shape="rect" id="node6" href="null" title="&lt;TABLE&gt;" alt="" coords="773,201,949,266"/>
+<area shape="rect" id="node1_0" href="./PeopleMvcConfiguration.html" title="net.ljcomputing.people.web.config.PeopleMvcConfiguration" alt="" coords="501,115,654,141"/>
+<area shape="rect" id="node1" href="./PeopleMvcConfiguration.html" title="&lt;TABLE&gt;" alt="" coords="490,104,665,152"/>
+<area shape="rect" id="node3" href="null" title="&lt;TABLE&gt;" alt="" coords="5,209,256,258"/>
+<area shape="rect" id="node4" href="null" title="&lt;TABLE&gt;" alt="" coords="280,201,456,266"/>
+<area shape="rect" id="node5" href="null" title="&lt;TABLE&gt;" alt="" coords="480,209,675,258"/>
+<area shape="rect" id="node6" href="null" title="&lt;TABLE&gt;" alt="" coords="699,209,949,258"/>
 <area shape="rect" id="node7" href="null" title="&lt;TABLE&gt;" alt="" coords="973,209,1224,258"/>
-<area shape="rect" id="node2" href="null" title="&lt;TABLE&gt;" alt="" coords="499,6,749,55"/>
+<area shape="rect" id="node2" href="null" title="&lt;TABLE&gt;" alt="" coords="452,6,703,55"/>
 </map>

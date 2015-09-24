@@ -62,7 +62,7 @@ public class EmailAddressController {
 	@LogEvent(level = Level.INFO, message = "Getting all Email Addresses")
 	@RequestMapping(value = "/", method = RequestMethod.GET, produces = { "application/json" })
 	public @ResponseBody List<EmailAddressEntity> getAllEmailAddressAddresses() {
-		return emailAddressService.findAll();
+		return emailAddressService.readAll();
 	}
 
 	/**
@@ -76,7 +76,7 @@ public class EmailAddressController {
 	@LogEvent(level = Level.INFO, message = "Getting Email Address")
 	@RequestMapping(value = "/{uuidString}", method = RequestMethod.GET, produces = { "application/json" })
 	public @ResponseBody EmailAddressEntity getEmailAddress(@PathVariable String uuidString) {
-		return emailAddressService.findByUuidString(uuidString);
+		return emailAddressService.readByUuidString(uuidString);
 	}
 
 	/**

@@ -16,6 +16,10 @@
 
 package net.ljcomputing.people.service.impl;
 
+import static org.junit.Assert.assertTrue;
+
+import java.util.List;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -26,10 +30,12 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.transaction.annotation.Transactional;
 
+import net.ljcomputing.gson.converter.GsonConverterService;
 import net.ljcomputing.people.PeopleApplication;
 import net.ljcomputing.people.domain.ContactOrder;
 import net.ljcomputing.people.domain.ContactType;
 import net.ljcomputing.people.entity.EmailAddressEntity;
+import net.ljcomputing.people.entity.EmailAddressPreferenceEntity;
 import net.ljcomputing.people.entity.PersonEntity;
 import net.ljcomputing.people.entity.PersonalContactsEntity;
 import net.ljcomputing.people.service.EmailAddressService;
@@ -44,10 +50,13 @@ import net.ljcomputing.people.service.PersonalContactsService;
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = PeopleApplication.class)
-public class PersonalContactsEntityRepositoryTest {
+public class PersonalContactsServiceImplTest {
 
 	/** The logger. */
-	private static Logger logger = LoggerFactory.getLogger(PersonalContactsEntityRepositoryTest.class);
+	private static Logger logger = LoggerFactory.getLogger(PersonalContactsServiceImplTest.class);
+	
+	@Autowired
+	private GsonConverterService gsonConverterService;
 
 	/** The person service. */
 	@Autowired
@@ -75,13 +84,41 @@ public class PersonalContactsEntityRepositoryTest {
 
 	}
 
+	/**
+	 * Test.
+	 *
+	 * @throws Exception the exception
+	 */
 	@Test
 	@Transactional
 	public void test() throws Exception {
-		entity1 = personService.findAll().get(0);
-		PersonalContactsEntity personalContactsEntity = personalContactsService.readPersonalContacts(entity1);
-		emailAddressEntity1 = emailAddressService.findAll().get(0);
+		logger.debug("start");
+		
+		PersonalContactsEntity personalContactsEntity = null;
+		List<PersonEntity> personEntities = personService.readAll();
+		
+		for(PersonEntity personEntity : personEntities) {
+			entity1 = personEntity;
+			personalContactsEntity = personalContactsService.readPersonalContacts(entity1);
+			logger.debug("  personalContactsEntity: {}", gsonConverterService.toJson(personalContactsEntity));
+		}
+		
+		emailAddressEntity1 = emailAddressService.readAll().get(0);
+		
 		personalContactsEntity.addEmailPreference(emailAddressEntity1, ContactOrder.PRIMARY, ContactType.BUSINESS);
-		logger.debug("saved as : {}", personalContactsService.savePersonalContacts(personalContactsEntity));
+		
+		logger.debug("saved as : {}", gsonConverterService.toJson(personalContactsService.savePersonalContacts(personalContactsEntity)));
+		
+		logger.debug(" before: {}", personalContactsEntity.getEmailPreferences().size());
+		personalContactsEntity.removeEmailPreference((EmailAddressPreferenceEntity) (personalContactsEntity.getEmailPreferences()).toArray()[0]);
+		logger.debug(" after: {}", personalContactsEntity.getEmailPreferences().size());
+		
+		logger.debug("saved as : {}", gsonConverterService.toJson(personalContactsService.savePersonalContacts(personalContactsEntity)));
+
+		logger.debug(" after save: {}", personalContactsService.readPersonalContacts(entity1).getEmailPreferences().size());
+
+		assertTrue(true);
+
+		logger.debug("end");
 	}
 }

@@ -67,7 +67,7 @@ public class PersonalContactServiceImpl implements PersonalContactsService {
 	 * readPersonalContactsByUuid(java.lang.String)
 	 */
 	public PersonalContactsEntity readPersonalContactsByUuid(String uuidString) {
-		return readPersonalContacts(personService.findByUuidString(uuidString));
+		return readPersonalContacts(personService.readByUuidString(uuidString));
 	}
 
 	/*
@@ -77,7 +77,7 @@ public class PersonalContactServiceImpl implements PersonalContactsService {
 	 * readPersonalContactsByUuid(java.util.UUID)
 	 */
 	public PersonalContactsEntity readPersonalContactsByUuid(UUID uuid) {
-		return readPersonalContacts(personService.findByUuid(uuid));
+		return readPersonalContacts(personService.readByUuid(uuid));
 	}
 
 	/*

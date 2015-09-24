@@ -102,12 +102,12 @@ digraph G {
 	c1521:p -> c1526:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// net.ljcomputing.people.entity.PersonalContactsEntity DEPEND net.ljcomputing.people.domain.PhoneType
 	c1514:p -> c1532:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
-	// net.ljcomputing.people.entity.PersonalContactsEntity DEPEND net.ljcomputing.people.domain.ContactOrder
-	c1514:p -> c1531:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// net.ljcomputing.people.entity.PersonalContactsEntity DEPEND net.ljcomputing.people.domain.ContactType
 	c1514:p -> c1530:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// net.ljcomputing.people.entity.PersonalContactsEntity DEPEND net.ljcomputing.people.domain.MailingAddressType
 	c1514:p -> c1526:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
+	// net.ljcomputing.people.entity.PersonalContactsEntity DEPEND net.ljcomputing.people.domain.ContactOrder
+	c1514:p -> c1531:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// net.ljcomputing.people.entity.PhoneNumberPreferenceEntity DEPEND net.ljcomputing.people.domain.PhoneType
 	c1519:p -> c1532:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// net.ljcomputing.people.entity.MailingAddressPreferenceEntity DEPEND net.ljcomputing.people.domain.MailingAddressType
