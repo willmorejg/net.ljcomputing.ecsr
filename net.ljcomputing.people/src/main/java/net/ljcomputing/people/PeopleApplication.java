@@ -25,7 +25,6 @@ import org.springframework.context.annotation.Import;
 
 import net.ljcomputing.gson.config.GsonConfiguration;
 import net.ljcomputing.logging.config.LoggingConfiguration;
-import net.ljcomputing.people.config.Neo4JConfig;
 import net.ljcomputing.rhino.RhinoConfiguration;
 
 /**
@@ -33,7 +32,7 @@ import net.ljcomputing.rhino.RhinoConfiguration;
  */
 @Configuration
 @ComponentScan(basePackages = { "net.ljcomputing.core", "net.ljcomputing.people" })
-@Import({ LoggingConfiguration.class, Neo4JConfig.class, GsonConfiguration.class, RhinoConfiguration.class })
+@Import({ LoggingConfiguration.class, GsonConfiguration.class, RhinoConfiguration.class })
 @EnableAspectJAutoProxy(proxyTargetClass = true)
 public class PeopleApplication implements CommandLineRunner {
 	/**

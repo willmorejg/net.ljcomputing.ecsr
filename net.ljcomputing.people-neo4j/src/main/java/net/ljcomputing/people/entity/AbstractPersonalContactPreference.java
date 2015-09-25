@@ -89,7 +89,6 @@ public abstract class AbstractPersonalContactPreference<T extends Entity> implem
 	/* (non-Javadoc)
 	 * @see net.ljcomputing.core.domain.Domain#setUuid(java.util.UUID)
 	 */
-	@Override
 	public void setUuid(UUID uuid) {
 		this.uuid = uuid;
 	}
@@ -127,7 +126,6 @@ public abstract class AbstractPersonalContactPreference<T extends Entity> implem
 	/* (non-Javadoc)
 	 * @see net.ljcomputing.people.entity.PersonalContactPreferenceEntity#setContact(net.ljcomputing.core.entity.Entity)
 	 */
-	@Override
 	public void setContact(T contact) {
 		this.contact = contact;
 	}

@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beansProjectDescription>
 	<version>1</version>
-	<pluginVersion><![CDATA[3.6.4.201503051146-RELEASE]]></pluginVersion>
+	<pluginVersion><![CDATA[3.7.0.201506251244-RELEASE]]></pluginVersion>
 	<configSuffixes>
 		<configSuffix><![CDATA[xml]]></configSuffix>
 	</configSuffixes>
 	<enableImports><![CDATA[false]]></enableImports>
 	<configs>
-		<config>java:net.ljcomputing.core.PeopleApplication</config>
-		<config>java:net.ljcomputing.core.config.Neo4JConfig</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>
