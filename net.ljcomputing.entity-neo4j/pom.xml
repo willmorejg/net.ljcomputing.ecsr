@@ -3,16 +3,13 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<parent>
-		<groupId>net.ljcomputing</groupId>
-		<artifactId>ecsr</artifactId>
-		<version>1.0.0-SNAPSHOT</version>
-	</parent>
+	<groupId>net.ljcomputing</groupId>
+	<artifactId>entity-neo4j</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
 
-	<artifactId>core</artifactId>
 
-	<name>LJ Computing - Core</name>
-	<description>Project containing domain models related to the ECSR core.</description>
+	<name>LJ Computing - Entity - Neo4J</name>
+	<description>Project containing entities related to domain models, related to the ECSR core, and coupled with Neo4J as the data source.</description>
 
 	<!-- Contact and License Information -->
 	<organization>
@@ -38,15 +35,22 @@
 		<source.version>1.8</source.version>
 		<target.version>1.8</target.version>
 
-        <net-ljcomputing-rhino.version>1.0.0-SNAPSHOT</net-ljcomputing-rhino.version>
+        <net-ljcomputing-neo4j.version>1.0.0-SNAPSHOT</net-ljcomputing-neo4j.version>
 	</properties>
 
 	<dependencies>
 
 		<dependency>
 			<groupId>net.ljcomputing</groupId>
-			<artifactId>rhino</artifactId>
-			<version>${net-ljcomputing-rhino.version}</version>
+			<artifactId>neo4j</artifactId>
+			<version>${net-ljcomputing-neo4j.version}</version>
+			<type>pom</type>
+		</dependency>
+
+		<dependency>
+			<groupId>net.ljcomputing</groupId>
+			<artifactId>entity</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
 		</dependency>
 
 	</dependencies>

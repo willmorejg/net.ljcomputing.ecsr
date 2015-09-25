@@ -10,6 +10,7 @@
 
 	<modules>
 		<module>net.ljcomputing.core</module>
+		<module>net.ljcomputing.entity</module>
 		<module>net.ljcomputing.people</module>
 		<module>net.ljcomputing.people-web</module>
 <!-- 		<module>net.ljcomputing.team</module> -->
