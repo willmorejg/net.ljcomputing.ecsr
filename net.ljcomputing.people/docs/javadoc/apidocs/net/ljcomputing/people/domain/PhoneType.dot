@@ -9,34 +9,12 @@ digraph G {
 	node [fontname="Helvetica",fontsize=10,shape=plaintext];
 	nodesep=0.25;
 	ranksep=0.5;
-	// net.ljcomputing.people.entity.PersonalContactsEntity
-	c1838 [label=<<table title="net.ljcomputing.people.entity.PersonalContactsEntity" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../entity/PersonalContactsEntity.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> PersonalContactsEntity </td></tr>
-<tr><td align="center" balign="center"><font point-size="7.0"> net.ljcomputing.people.entity </font></td></tr>
-		</table></td></tr>
-		</table>>, URL="../entity/PersonalContactsEntity.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
-	// net.ljcomputing.people.entity.PhoneNumberPreferenceEntity
-	c1843 [label=<<table title="net.ljcomputing.people.entity.PhoneNumberPreferenceEntity" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../entity/PhoneNumberPreferenceEntity.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> PhoneNumberPreferenceEntity </td></tr>
-<tr><td align="center" balign="center"><font point-size="7.0"> net.ljcomputing.people.entity </font></td></tr>
-		</table></td></tr>
-		</table>>, URL="../entity/PhoneNumberPreferenceEntity.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// net.ljcomputing.people.domain.PhoneType
-	c1856 [label=<<table title="net.ljcomputing.people.domain.PhoneType" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./PhoneType.html">
+	c192 [label=<<table title="net.ljcomputing.people.domain.PhoneType" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./PhoneType.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;enumeration&#187; </td></tr>
 <tr><td align="center" balign="center"> PhoneType </td></tr>
 		</table></td></tr>
 		</table>>, URL="./PhoneType.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
-	// net.ljcomputing.people.entity.PersonalContactsEntity NAVASSOC net.ljcomputing.people.entity.PhoneNumberPreferenceEntity
-	c1838:p -> c1843:p [taillabel="", label="", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
-	// net.ljcomputing.people.entity.PhoneNumberPreferenceEntity NAVASSOC net.ljcomputing.people.domain.PhoneType
-	c1843:p -> c1856:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
-	// net.ljcomputing.people.entity.PersonalContactsEntity DEPEND net.ljcomputing.people.domain.PhoneType
-	c1838:p -> c1856:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
-	// net.ljcomputing.people.entity.PhoneNumberPreferenceEntity DEPEND net.ljcomputing.people.domain.PhoneType
-	c1843:p -> c1856:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 }
 

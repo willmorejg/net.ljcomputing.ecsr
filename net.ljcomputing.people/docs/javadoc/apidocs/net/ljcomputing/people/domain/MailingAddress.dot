@@ -9,43 +9,34 @@ digraph G {
 	node [fontname="Helvetica",fontsize=10,shape=plaintext];
 	nodesep=0.25;
 	ranksep=0.5;
-	// net.ljcomputing.people.entity.MailingAddressEntity
-	c847 [label=<<table title="net.ljcomputing.people.entity.MailingAddressEntity" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../entity/MailingAddressEntity.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> MailingAddressEntity </td></tr>
-<tr><td align="center" balign="center"><font point-size="7.0"> net.ljcomputing.people.entity </font></td></tr>
-		</table></td></tr>
-		</table>>, URL="../entity/MailingAddressEntity.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// net.ljcomputing.people.domain.State
-	c855 [label=<<table title="net.ljcomputing.people.domain.State" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./State.html">
+	c119 [label=<<table title="net.ljcomputing.people.domain.State" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./State.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;enumeration&#187; </td></tr>
 <tr><td align="center" balign="center"> State </td></tr>
 		</table></td></tr>
 		</table>>, URL="./State.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// net.ljcomputing.people.domain.MailingAddress
-	c861 [label=<<table title="net.ljcomputing.people.domain.MailingAddress" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./MailingAddress.html">
+	c125 [label=<<table title="net.ljcomputing.people.domain.MailingAddress" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./MailingAddress.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> MailingAddress </td></tr>
 		</table></td></tr>
 		</table>>, URL="./MailingAddress.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// net.ljcomputing.people.domain.Contact
-	c863 [label=<<table title="net.ljcomputing.people.domain.Contact" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Contact.html">
+	c127 [label=<<table title="net.ljcomputing.people.domain.Contact" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Contact.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Contact </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Contact.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
-	//net.ljcomputing.people.entity.MailingAddressEntity extends net.ljcomputing.people.domain.MailingAddress
-	c861:p -> c847:p [dir=back,arrowtail=empty];
 	//net.ljcomputing.people.domain.MailingAddress extends net.ljcomputing.core.domain.AbstractDomain
-	c876:p -> c861:p [dir=back,arrowtail=empty];
+	c128:p -> c125:p [dir=back,arrowtail=empty];
 	//net.ljcomputing.people.domain.MailingAddress implements net.ljcomputing.people.domain.Contact
-	c863:p -> c861:p [dir=back,arrowtail=empty,style=dashed];
+	c127:p -> c125:p [dir=back,arrowtail=empty,style=dashed];
 	// net.ljcomputing.people.domain.MailingAddress NAVASSOC net.ljcomputing.people.domain.State
-	c861:p -> c855:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c125:p -> c119:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// net.ljcomputing.core.domain.AbstractDomain
-	c876 [label=<<table title="net.ljcomputing.core.domain.AbstractDomain" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c128 [label=<<table title="net.ljcomputing.core.domain.AbstractDomain" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> AbstractDomain </font></td></tr>
 <tr><td align="center" balign="center"><font point-size="7.0"> net.ljcomputing.core.domain </font></td></tr>

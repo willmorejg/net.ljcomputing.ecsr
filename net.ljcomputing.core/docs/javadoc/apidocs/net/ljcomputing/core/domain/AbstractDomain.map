@@ -1,8 +1,6 @@
 <map id="G" name="G">
-<area shape="rect" id="node1_0" href="./Node.html" title="net.ljcomputing.core.domain.Node" alt="" coords="16,11,96,53"/>
-<area shape="rect" id="node1" href="./Node.html" title="&lt;TABLE&gt;" alt="" coords="5,6,107,58"/>
-<area shape="rect" id="node2_1" href="./AbstractDomain.html" title="net.ljcomputing.core.domain.AbstractDomain" alt="" coords="326,118,431,143"/>
-<area shape="rect" id="node2" href="./AbstractDomain.html" title="&lt;TABLE&gt;" alt="" coords="315,107,442,155"/>
-<area shape="rect" id="node3_2" href="../service/impl/AbstractEntityServiceImpl.html" title="net.ljcomputing.core.service.impl.AbstractEntityServiceImpl" alt="" coords="141,13,1264,51"/>
-<area shape="rect" id="node3" href="../service/impl/AbstractEntityServiceImpl.html" title="&lt;TABLE&gt;" alt="" coords="131,7,1275,57"/>
+<area shape="rect" id="node1_0" href="./Node.html" title="net.ljcomputing.core.domain.Node" alt="" coords="28,11,108,53"/>
+<area shape="rect" id="node1" href="./Node.html" title="&lt;TABLE&gt;" alt="" coords="17,6,119,58"/>
+<area shape="rect" id="node2_1" href="./AbstractDomain.html" title="net.ljcomputing.core.domain.AbstractDomain" alt="" coords="15,118,121,143"/>
+<area shape="rect" id="node2" href="./AbstractDomain.html" title="&lt;TABLE&gt;" alt="" coords="5,107,131,155"/>
 </map>

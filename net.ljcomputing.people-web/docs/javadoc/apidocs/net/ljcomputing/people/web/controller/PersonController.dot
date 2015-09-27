@@ -27,9 +27,9 @@ digraph G {
 	c201:p -> c206:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// net.ljcomputing.people.web.controller.PersonController NAVASSOC net.ljcomputing.people.service.PersonalContactsService
 	c201:p -> c207:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
-	// net.ljcomputing.people.web.controller.PersonController DEPEND net.ljcomputing.people.domain.Person
-	c201:p -> c208:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// net.ljcomputing.people.web.controller.PersonController DEPEND net.ljcomputing.people.entity.PersonalContactsEntity
+	c201:p -> c208:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
+	// net.ljcomputing.people.web.controller.PersonController DEPEND net.ljcomputing.people.domain.Person
 	c201:p -> c209:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// net.ljcomputing.people.service.PersonService
 	c206 [label=<<table title="net.ljcomputing.people.service.PersonService" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
@@ -48,14 +48,14 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// net.ljcomputing.people.domain.Person
-	c208 [label=<<table title="net.ljcomputing.people.domain.Person" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c209 [label=<<table title="net.ljcomputing.people.domain.Person" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Person </td></tr>
 <tr><td align="center" balign="center"><font point-size="7.0"> net.ljcomputing.people.domain </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// net.ljcomputing.people.entity.PersonalContactsEntity
-	c209 [label=<<table title="net.ljcomputing.people.entity.PersonalContactsEntity" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c208 [label=<<table title="net.ljcomputing.people.entity.PersonalContactsEntity" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> PersonalContactsEntity </td></tr>
 <tr><td align="center" balign="center"><font point-size="7.0"> net.ljcomputing.people.entity </font></td></tr>

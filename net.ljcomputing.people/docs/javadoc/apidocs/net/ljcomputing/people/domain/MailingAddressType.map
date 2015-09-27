@@ -1,8 +1,4 @@
 <map id="G" name="G">
-<area shape="rect" id="node1_0" href="../entity/PersonalContactsEntity.html" title="net.ljcomputing.people.entity.PersonalContactsEntity" alt="" coords="111,11,257,50"/>
-<area shape="rect" id="node1" href="../entity/PersonalContactsEntity.html" title="&lt;TABLE&gt;" alt="" coords="101,6,267,55"/>
-<area shape="rect" id="node2_1" href="../entity/MailingAddressPreferenceEntity.html" title="net.ljcomputing.people.entity.MailingAddressPreferenceEntity" alt="" coords="15,110,209,149"/>
-<area shape="rect" id="node2" href="../entity/MailingAddressPreferenceEntity.html" title="&lt;TABLE&gt;" alt="" coords="5,105,219,154"/>
-<area shape="rect" id="node3_2" href="./MailingAddressType.html" title="net.ljcomputing.people.domain.MailingAddressType" alt="" coords="47,209,177,250"/>
-<area shape="rect" id="node3" href="./MailingAddressType.html" title="&lt;TABLE&gt;" alt="" coords="36,203,188,255"/>
+<area shape="rect" id="node1_0" href="./MailingAddressType.html" title="net.ljcomputing.people.domain.MailingAddressType" alt="" coords="16,11,147,53"/>
+<area shape="rect" id="node1" href="./MailingAddressType.html" title="&lt;TABLE&gt;" alt="" coords="5,6,157,58"/>
 </map>

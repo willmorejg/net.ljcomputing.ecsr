@@ -1,6 +1,3 @@
-net.ljcomputing.core.entity
 net.ljcomputing.core.domain
-net.ljcomputing.core.service.impl
-net.ljcomputing.core.service
 net.ljcomputing.core
 net.ljcomputing.core.config

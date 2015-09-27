@@ -13,7 +13,7 @@
 		<module>net.ljcomputing.entity</module>
 		<module>net.ljcomputing.people</module>
 		<module>net.ljcomputing.people-web</module>
-<!-- 		<module>net.ljcomputing.team</module> -->
+		<!-- <module>net.ljcomputing.team</module> -->
 	</modules>
 
 	<groupId>net.ljcomputing</groupId>
@@ -26,7 +26,7 @@
 
 	<properties>
 		<github.username>willmorejg</github.username>
-		
+
 		<net-ljcomputing-rhino.version>1.0.0-SNAPSHOT</net-ljcomputing-rhino.version>
 		<net-ljcomputing-gson.version>1.0.1-SNAPSHOT</net-ljcomputing-gson.version>
 		<net-ljcomputing-logging.version>1.0.0-SNAPSHOT</net-ljcomputing-logging.version>
@@ -58,21 +58,21 @@
 		<developerConnection>scm:git:ssh://git@github.com/${github.username}/${project.groupId}.${project.artifactId}.git</developerConnection>
 	</scm>
 
-   <distributionManagement>
+	<distributionManagement>
 
-        <repository>
-            <id>githubreleaserepo</id>
-            <name>GitHub release repository</name>
-            <url>scm:git:ssh://git@github.com/${github.username}/repos/raw/master/releases</url>
-        </repository>
+		<repository>
+			<id>githubreleaserepo</id>
+			<name>GitHub release repository</name>
+			<url>scm:git:ssh://git@github.com/${github.username}/repos/raw/master/releases</url>
+		</repository>
 
-        <snapshotRepository>
-            <id>githubsnapshotrepo</id>
-            <name>GitHub snapshot repository</name>
-            <url>scm:git:ssh://git@github.com/${github.username}/repos/raw/master/snapshots</url>
-        </snapshotRepository>
+		<snapshotRepository>
+			<id>githubsnapshotrepo</id>
+			<name>GitHub snapshot repository</name>
+			<url>scm:git:ssh://git@github.com/${github.username}/repos/raw/master/snapshots</url>
+		</snapshotRepository>
 
-    </distributionManagement>
+	</distributionManagement>
 
 	<dependencies>
 
@@ -158,7 +158,7 @@
 					<target>${target.version}</target>
 				</configuration>
 			</plugin>
-		
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-scm-plugin</artifactId>
@@ -198,6 +198,11 @@
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
 				<executions>
 					<execution>
@@ -217,13 +222,13 @@
 						<artifactId>umlgraph</artifactId>
 						<version>5.6</version>
 					</docletArtifact>
-				    <additionalparam>
-				      -inferrel -inferdep -quiet -hide java.*
-				      -collpackages java.util.* -qualify
-				      -postfixpackage
-				      -nodefontsize 9 -nodefontpackagesize 7
-				    </additionalparam>
-   					<tags>
+					<additionalparam>
+						-inferrel -inferdep -quiet -hide java.*
+						-collpackages java.util.* -qualify
+						-postfixpackage
+						-nodefontsize 9 -nodefontpackagesize 7
+					</additionalparam>
+					<tags>
 						<tag>
 							<name>todo</name>
 							<placement>a</placement>
@@ -231,12 +236,24 @@
 						</tag>
 					</tags>
 					<top>
-&lt;div style=&apos;background:#eeeeef;font-size:8pt;font-family:'DejaVu Sans',Arial,Helvetica,sans-serif;text-align:left;margin-left:25px;margin-right:25px;padding:8px 3px 3px 7px;&apos;&gt;
-&lt;p&gt;Copyright 2014-2015, James G. Willmore, &lt;a href=&quot;http://ljcomputing.net&quot;&gt;LJ Computing&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);&lt;/br&gt; you may not use this file except in compliance with the License. You may obtain a copy of the License at &lt;a href=&quot;http://www.apache.org/licenses/LICENSE-2.0&quot;&gt;http://www.apache.org/licenses/LICENSE-2.0&lt;/a&gt;
-&lt;p&gt;Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.&lt;/p&gt;
-&lt;/div&gt;
-					</top>
+						&lt;div style=&apos;background:#eeeeef;font-size:8pt;font-family:'DejaVu
+						Sans',Arial,Helvetica,sans-serif;text-align:left;margin-left:25px;margin-right:25px;padding:8px
+						3px 3px 7px;&apos;&gt;
+						&lt;p&gt;Copyright 2014-2015, James G. Willmore, &lt;a
+						href=&quot;http://ljcomputing.net&quot;&gt;LJ
+						Computing&lt;/a&gt;&lt;/p&gt;
+						&lt;p&gt;Licensed under the Apache License, Version 2.0 (the
+						&quot;License&quot;);&lt;/br&gt; you may not use this file except
+						in compliance with the License. You may obtain a copy of the
+						License at &lt;a
+						href=&quot;http://www.apache.org/licenses/LICENSE-2.0&quot;&gt;http://www.apache.org/licenses/LICENSE-2.0&lt;/a&gt;
+						&lt;p&gt;Unless required by applicable law or agreed to in
+						writing, software distributed under the License is distributed on
+						an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF
+						ANY KIND, either express or implied. See the License for the
+						specific language governing permissions and limitations under the
+						License.&lt;/p&gt;
+						&lt;/div&gt; </top>
 					<linksource>true</linksource>
 				</configuration>
 			</plugin>

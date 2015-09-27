@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>net.ljcomputing</groupId>
+	<artifactId>entity-orientdb</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+
+
+	<name>LJ Computing - Entity - OrientDB</name>
+	<description>Project containing entities related to domain models, related to the ECSR core, and coupled with OrientDB (JPA) as the data source.</description>
+
+	<!-- Contact and License Information -->
+	<organization>
+		<name>LJ Computing</name>
+		<url>http://ljcomputing.net/</url>
+	</organization>
+	<licenses>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0</url>
+		</license>
+	</licenses>
+	<developers>
+		<developer>
+			<name>James G. Willmore</name>
+		</developer>
+	</developers>
+
+	<properties>
+		<start-class>net.ljcomputing.ecsr.Ecsr</start-class>
+
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<source.version>1.8</source.version>
+		<target.version>1.8</target.version>
+		
+		<spring-data-jpa.version>1.9.0.RELEASE</spring-data-jpa.version>
+	</properties>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>net.ljcomputing</groupId>
+			<artifactId>entity</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-jpa</artifactId>
+			<version>${spring-data-jpa.version}</version>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+
+		<plugins>
+
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<mainClass>${start-class}</mainClass>
+					<classifier>exec</classifier>
+				</configuration>
+			</plugin>
+
+		</plugins>
+
+	</build>
+
+</project>

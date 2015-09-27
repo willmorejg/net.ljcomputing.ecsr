@@ -9,51 +9,41 @@ digraph G {
 	node [fontname="Helvetica",fontsize=10,shape=plaintext];
 	nodesep=0.25;
 	ranksep=0.5;
-	// net.ljcomputing.people.entity.ContactEntity
-	c389 [label=<<table title="net.ljcomputing.people.entity.ContactEntity" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../entity/ContactEntity.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
-<tr><td align="center" balign="center"> ContactEntity </td></tr>
-<tr><td align="center" balign="center"><font point-size="7.0"> net.ljcomputing.people.entity </font></td></tr>
-		</table></td></tr>
-		</table>>, URL="../entity/ContactEntity.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// net.ljcomputing.people.domain.PhoneNumber
-	c402 [label=<<table title="net.ljcomputing.people.domain.PhoneNumber" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PhoneNumber.html">
+	c44 [label=<<table title="net.ljcomputing.people.domain.PhoneNumber" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PhoneNumber.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> PhoneNumber </td></tr>
 		</table></td></tr>
 		</table>>, URL="./PhoneNumber.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// net.ljcomputing.people.domain.EmailAddress
-	c406 [label=<<table title="net.ljcomputing.people.domain.EmailAddress" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EmailAddress.html">
+	c52 [label=<<table title="net.ljcomputing.people.domain.EmailAddress" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EmailAddress.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> EmailAddress </td></tr>
 		</table></td></tr>
 		</table>>, URL="./EmailAddress.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// net.ljcomputing.people.domain.MailingAddress
-	c407 [label=<<table title="net.ljcomputing.people.domain.MailingAddress" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MailingAddress.html">
+	c54 [label=<<table title="net.ljcomputing.people.domain.MailingAddress" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MailingAddress.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> MailingAddress </td></tr>
 		</table></td></tr>
 		</table>>, URL="./MailingAddress.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// net.ljcomputing.people.domain.Contact
-	c409 [label=<<table title="net.ljcomputing.people.domain.Contact" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Contact.html">
+	c57 [label=<<table title="net.ljcomputing.people.domain.Contact" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Contact.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Contact </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Contact.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
-	//net.ljcomputing.people.entity.ContactEntity implements net.ljcomputing.people.domain.Contact
-	c409:p -> c389:p [dir=back,arrowtail=empty,style=dashed];
 	//net.ljcomputing.people.domain.PhoneNumber implements net.ljcomputing.people.domain.Contact
-	c409:p -> c402:p [dir=back,arrowtail=empty,style=dashed];
+	c57:p -> c44:p [dir=back,arrowtail=empty,style=dashed];
 	//net.ljcomputing.people.domain.EmailAddress implements net.ljcomputing.people.domain.Contact
-	c409:p -> c406:p [dir=back,arrowtail=empty,style=dashed];
+	c57:p -> c52:p [dir=back,arrowtail=empty,style=dashed];
 	//net.ljcomputing.people.domain.MailingAddress implements net.ljcomputing.people.domain.Contact
-	c409:p -> c407:p [dir=back,arrowtail=empty,style=dashed];
+	c57:p -> c54:p [dir=back,arrowtail=empty,style=dashed];
 	//net.ljcomputing.people.domain.Contact implements net.ljcomputing.core.domain.Domain
-	c424:p -> c409:p [dir=back,arrowtail=empty,style=dashed];
+	c60:p -> c57:p [dir=back,arrowtail=empty,style=dashed];
 	// net.ljcomputing.core.domain.Domain
-	c424 [label=<<table title="net.ljcomputing.core.domain.Domain" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c60 [label=<<table title="net.ljcomputing.core.domain.Domain" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Domain </td></tr>

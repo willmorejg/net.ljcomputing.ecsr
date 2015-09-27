@@ -41,13 +41,12 @@
 
 		<tomcat.version>8.0.26</tomcat.version>
 
-		<net-ljcomputing-neo4j.version>1.0.0-SNAPSHOT</net-ljcomputing-neo4j.version>
 		<net-ljcomputing-rhino.version>1.0.0-SNAPSHOT</net-ljcomputing-rhino.version>
 		<net-ljcomputing-logging.version>1.0.0-SNAPSHOT</net-ljcomputing-logging.version>
 		<net-ljcomputing-gson.version>1.0.1-SNAPSHOT</net-ljcomputing-gson.version>
 		<!-- define which data source implementation here, by artifactId -->
 		<!-- VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV -->
-		<net-ljcomputing-people.implementation>people-neo4j</net-ljcomputing-people.implementation>
+		<net-ljcomputing-people.implementation>people-orientdb</net-ljcomputing-people.implementation>
 		<!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
 		<net-ljcomputing-people.version>1.0.0-SNAPSHOT</net-ljcomputing-people.version>
 		<net-ljcomputing-core.version>1.0.0-SNAPSHOT</net-ljcomputing-core.version>
@@ -66,13 +65,6 @@
 			<groupId>org.apache.tomcat.embed</groupId>
 			<artifactId>tomcat-embed-jasper</artifactId>
 			<scope>provided</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>net.ljcomputing</groupId>
-			<artifactId>neo4j</artifactId>
-			<version>${net-ljcomputing-neo4j.version}</version>
-			<type>pom</type>
 		</dependency>
 
 		<dependency>

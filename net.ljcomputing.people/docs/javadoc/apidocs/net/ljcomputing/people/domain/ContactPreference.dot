@@ -9,26 +9,17 @@ digraph G {
 	node [fontname="Helvetica",fontsize=10,shape=plaintext];
 	nodesep=0.25;
 	ranksep=0.5;
-	// net.ljcomputing.people.entity.AbstractPersonalContactPreference<T extends net.ljcomputing.core.entity.Entity>
-	c510 [label=<<table title="net.ljcomputing.people.entity.AbstractPersonalContactPreference" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../entity/AbstractPersonalContactPreference.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"><font face="Helvetica-Oblique"> AbstractPersonalContactPreference&lt;T extends net.ljcomputing.core.entity.Entity&gt; </font></td></tr>
-<tr><td align="center" balign="center"><font point-size="7.0"> net.ljcomputing.people.entity </font></td></tr>
-		</table></td></tr>
-		</table>>, URL="../entity/AbstractPersonalContactPreference.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// net.ljcomputing.people.domain.ContactPreference
-	c522 [label=<<table title="net.ljcomputing.people.domain.ContactPreference" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ContactPreference.html">
+	c75 [label=<<table title="net.ljcomputing.people.domain.ContactPreference" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ContactPreference.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> ContactPreference </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ContactPreference.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
-	//net.ljcomputing.people.entity.AbstractPersonalContactPreference<T extends net.ljcomputing.core.entity.Entity> implements net.ljcomputing.people.domain.ContactPreference
-	c522:p -> c510:p [dir=back,arrowtail=empty,style=dashed];
 	//net.ljcomputing.people.domain.ContactPreference implements net.ljcomputing.core.domain.Domain
-	c546:p -> c522:p [dir=back,arrowtail=empty,style=dashed];
+	c87:p -> c75:p [dir=back,arrowtail=empty,style=dashed];
 	// net.ljcomputing.core.domain.Domain
-	c546 [label=<<table title="net.ljcomputing.core.domain.Domain" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c87 [label=<<table title="net.ljcomputing.core.domain.Domain" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Domain </td></tr>

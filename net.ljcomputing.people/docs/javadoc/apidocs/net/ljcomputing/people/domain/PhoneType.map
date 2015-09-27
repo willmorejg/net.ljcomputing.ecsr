@@ -1,8 +1,4 @@
 <map id="G" name="G">
-<area shape="rect" id="node1_0" href="../entity/PersonalContactsEntity.html" title="net.ljcomputing.people.entity.PersonalContactsEntity" alt="" coords="107,11,253,50"/>
-<area shape="rect" id="node1" href="../entity/PersonalContactsEntity.html" title="&lt;TABLE&gt;" alt="" coords="97,6,263,55"/>
-<area shape="rect" id="node2_1" href="../entity/PhoneNumberPreferenceEntity.html" title="net.ljcomputing.people.entity.PhoneNumberPreferenceEntity" alt="" coords="15,110,204,149"/>
-<area shape="rect" id="node2" href="../entity/PhoneNumberPreferenceEntity.html" title="&lt;TABLE&gt;" alt="" coords="4,105,215,154"/>
-<area shape="rect" id="node3_2" href="./PhoneType.html" title="net.ljcomputing.people.domain.PhoneType" alt="" coords="59,209,160,250"/>
-<area shape="rect" id="node3" href="./PhoneType.html" title="&lt;TABLE&gt;" alt="" coords="48,203,171,255"/>
+<area shape="rect" id="node1_0" href="./PhoneType.html" title="net.ljcomputing.people.domain.PhoneType" alt="" coords="16,11,117,53"/>
+<area shape="rect" id="node1" href="./PhoneType.html" title="&lt;TABLE&gt;" alt="" coords="5,6,128,58"/>
 </map>

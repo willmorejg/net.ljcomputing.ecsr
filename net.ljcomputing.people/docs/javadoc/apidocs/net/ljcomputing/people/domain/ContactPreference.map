@@ -1,7 +1,5 @@
 <map id="G" name="G">
-<area shape="rect" id="node1_0" href="../entity/AbstractPersonalContactPreference.html" title="net.ljcomputing.people.entity.AbstractPersonalContactPreference" alt="" coords="16,227,475,266"/>
-<area shape="rect" id="node1" href="../entity/AbstractPersonalContactPreference.html" title="&lt;TABLE&gt;" alt="" coords="5,222,485,271"/>
-<area shape="rect" id="node2_1" href="./ContactPreference.html" title="net.ljcomputing.people.domain.ContactPreference" alt="" coords="185,126,306,167"/>
-<area shape="rect" id="node2" href="./ContactPreference.html" title="&lt;TABLE&gt;" alt="" coords="174,121,317,173"/>
-<area shape="rect" id="node3" href="null" title="&lt;TABLE&gt;" alt="" coords="167,6,324,71"/>
+<area shape="rect" id="node1_0" href="./ContactPreference.html" title="net.ljcomputing.people.domain.ContactPreference" alt="" coords="23,126,145,167"/>
+<area shape="rect" id="node1" href="./ContactPreference.html" title="&lt;TABLE&gt;" alt="" coords="13,121,155,173"/>
+<area shape="rect" id="node2" href="null" title="&lt;TABLE&gt;" alt="" coords="5,6,163,71"/>
 </map>

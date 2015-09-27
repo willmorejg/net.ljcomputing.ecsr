@@ -9,32 +9,12 @@ digraph G {
 	node [fontname="Helvetica",fontsize=10,shape=plaintext];
 	nodesep=0.25;
 	ranksep=0.5;
-	// net.ljcomputing.people.entity.AbstractPersonalContactPreference<T extends net.ljcomputing.core.entity.Entity>
-	c551 [label=<<table title="net.ljcomputing.people.entity.AbstractPersonalContactPreference" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../entity/AbstractPersonalContactPreference.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"><font face="Helvetica-Oblique"> AbstractPersonalContactPreference&lt;T extends net.ljcomputing.core.entity.Entity&gt; </font></td></tr>
-<tr><td align="center" balign="center"><font point-size="7.0"> net.ljcomputing.people.entity </font></td></tr>
-		</table></td></tr>
-		</table>>, URL="../entity/AbstractPersonalContactPreference.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
-	// net.ljcomputing.people.entity.PersonalContactsEntity
-	c552 [label=<<table title="net.ljcomputing.people.entity.PersonalContactsEntity" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../entity/PersonalContactsEntity.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> PersonalContactsEntity </td></tr>
-<tr><td align="center" balign="center"><font point-size="7.0"> net.ljcomputing.people.entity </font></td></tr>
-		</table></td></tr>
-		</table>>, URL="../entity/PersonalContactsEntity.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// net.ljcomputing.people.domain.ContactType
-	c568 [label=<<table title="net.ljcomputing.people.domain.ContactType" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ContactType.html">
+	c94 [label=<<table title="net.ljcomputing.people.domain.ContactType" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ContactType.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;enumeration&#187; </td></tr>
 <tr><td align="center" balign="center"> ContactType </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ContactType.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
-	// net.ljcomputing.people.entity.AbstractPersonalContactPreference<T extends net.ljcomputing.core.entity.Entity> NAVASSOC net.ljcomputing.people.domain.ContactType
-	c551:p -> c568:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
-	// net.ljcomputing.people.entity.AbstractPersonalContactPreference<T extends net.ljcomputing.core.entity.Entity> DEPEND net.ljcomputing.people.domain.ContactType
-	c551:p -> c568:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
-	// net.ljcomputing.people.entity.PersonalContactsEntity DEPEND net.ljcomputing.people.domain.ContactType
-	c552:p -> c568:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 }
 
